@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="Cart">
+   <path d="M1 3h2.6C4.6 7.4 5 11.6 6 16c0 .4.6 1 1 1h14c1 0 1-1 0-1H7v-1h14c.4 0 1-.6 1-1l1-8c.1-.5-.5-1-1-1H5l-.4-2c-.1-.4-.3-1-.6-1H1C0 2 0 3 1 3z"/>
+   <circle r="2" cy="20" cx="10"/>
+   <circle cx="18" cy="20" r="2"/>
+</svg>

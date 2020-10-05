@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-label="Cutting">
+  <path d="M 17,23 V 1 c -2.5,4 -4,7 -4,9 0,3 2,3 3,3"/>
+  <path d="M 9,23 V 11 C 8,11 6,10 6,9 V 2"/>
+  <path d="M 9,8 V 2"/>
+  <path d="M 12,8 V 2"/>
+</svg>

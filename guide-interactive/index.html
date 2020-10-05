@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive elements - CrazyBulk Digital Design Guidelines</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Note: this needs to be trimmed down -->
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-black.9cbf35.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-bold.21fc44.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-extrabold.94d926.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-extralight.ca4784.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-light.402db5.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-medium.56aca2.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-regular.772874.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/inter-semibold.d54d49.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-bold.60f77b.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-extralight.407dbf.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-light.fee16d.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-medium.b618ee.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-regular.cb60cf.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/crazy-nutrition-2020/fonts/oswald-semibold.adde8f.woff2" type="font/woff2" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="CrazyBulk">
+    <meta property="fb:admins" content="1570989889829468">
+    <meta property="og:title" content="Interactive elements - CrazyBulk Digital Design Guidelines">
+    <meta property="og:description" content="CrazyBulk">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/crazy-nutrition-2020/guide-interactive/">
+    <meta property="og:site_name" content="CrazyBulk">
+    <meta property="og:image" content="/crazy-nutrition-2020/img/og/og-lumberjack.jpg">
+    <meta itemprop="image" content="/crazy-nutrition-2020/img/og/og-lumberjack.jpg">
+    <link rel="image_src" href="/crazy-nutrition-2020/img/og/og-lumberjack.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/crazy-nutrition-2020/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/crazy-nutrition-2020/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/crazy-nutrition-2020/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/crazy-nutrition-2020/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/crazy-nutrition-2020/img/favicon/safari-pinned-tab.svg" color="#2e38ef">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#d7f2db">
+<link href="../css/app.css" rel="stylesheet"></head>
+
+<body>
+    <a href="#main" class="skip bg-anvarol small text-uppercase text-breath pad-vert-tiny d-print-none">Skip to content <span class="shape sh-chev-down"></span></a>
+
+    <p class="container">
+        <a href="/crazy-nutrition-2020/">Home</a>
+        <a href="/crazy-nutrition-2020/guide-typeface/">Typefaces</a>
+        <a href="/crazy-nutrition-2020/guide-typography/">Typography</a>
+        <a href="/crazy-nutrition-2020/guide-heading/">Headings</a>
+        <a href="/crazy-nutrition-2020/guide-colour/">Colour</a>
+        <a href="/crazy-nutrition-2020/guide-button/">Buttons</a>
+        <a href="/crazy-nutrition-2020/guide-form/">Forms</a>
+        <a href="/crazy-nutrition-2020/guide-panel/">Panels and call-to-action</a>
+        <a href="/crazy-nutrition-2020/guide-icon/">Icons</a>
+        <a href="/crazy-nutrition-2020/guide-interactive/">Interactive</a>
+    </p>
+
+    <main id="main">
+        <div class="container">
+            <h1>Interactive</h1>
+
+            <section class="gutter-large" aria-label="Accordions">
+                <h2>Accordions</h2>
+                <div class="row">
+                    <div class="col-md">
+
+                        <div class="accordion">
+                            <input type="checkbox" name="markup-structure" id="markup-structure" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="markup-structure">
+                                <strong class="media-body">Markup structure</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>The below is the minimum functional markup required, to create an accordion:</p>
+                                <ul>
+                                    <li><code>.accordion</code>
+                                        <ul>
+                                            <li><code>input.accordion__control</code> - hidden with a <code>sr-only</code> class</li>
+                                            <li><code>label.accordion__trigger</code> - linked to the above checkbox</li>
+                                            <li><code>.accordion__details</code> - containing the content of the accordian pane</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>Note that as long as the checkbox appears first in the markup, the other two elements can switch round, so the tirgger comes after the details, if required.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <input type="checkbox" name="configuring" id="configuring" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="configuring">
+                                <strong class="media-body">Configuring</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>The input element can be set to either <code>checkbox</code> or <code>radio</code>. If the latter is used, then groups of accordions can be linked together using the <code>name</code> attribute and only one accordion pane will be open at any one time.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <input type="checkbox" name="icons" id="icons" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="icons">
+                                <strong class="media-body">Icons</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>If an <code>accordion__icon</code> element is used inside the <code>accordion__trigger</code>, this element will reflect the current state of the connected accordion pane by rotating.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md offset-lg-1">
+
+                        <div class="accordion">
+                            <input type="radio" name="radio" id="radio1" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="radio1">
+                                <strong class="media-body">Radio button example</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>This accordion only allows one pane to be visible at any one time.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <input type="radio" name="radio" id="radio2" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="radio2">
+                                <strong class="media-body">Cras eleifend nulla vel finibus dapibus</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>Fusce placerat, velit sit amet molestie venenatis, metus ex consectetur mauris, vitae elementum nunc dolor euismod mi. Morbi nulla nibh, lacinia quis sodales sit amet, blandit quis eros.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <input type="radio" name="radio" id="radio3" class="accordion__control sr-only">
+                            <label class="accordion__trigger media gutter-base" for="radio3">
+                                <strong class="media-body">Nulla sed aliquet felis, et cursus dui</strong>
+                                <span class="shape sh-chev-right accordion__icon ml-3 align-self-center text-anvarol"></span>
+                            </label>
+                            <div class="accordion__details">
+                                <p>Nullam id rutrum arcu. Proin quis leo a orci sodales iaculis. Donec nec ante a risus mattis iaculis id ut magna. Mauris id augue vitae nisl interdum convallis. Vivamus sed pellentesque nulla, ut sodales tellus. Nulla a cursus mauris, eget vulputate felis. Vivamus dapibus magna nisi, vitae interdum nibh laoreet nec. Suspendisse porttitor metus non enim gravida euismod.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="gutter-large" aria-label="Block scroll">
+                <h2>Block scroll</h2>
+                <div class="row">
+                    <div class="col-7 col-sm-9 col-md-10 col-lg-8">
+                        <p>Block scroll can be used to add unlimited items to a page, which scroll off to the right.</p>
+                        <p>Scrollers will take the width of their container and by default, their children will be 270px wide.</p>
+                        <p>Child elements can take a width of 100% if a <code>block-scroll__child-wide</code> class is used directly on them. This means that each child will fit exactly inside the scrolling container and will be replaced with a different child, when the user interacts with the left and right buttons.</p>
+                    </div>
+                </div>
+                <div class="block-scroll" data-js="block-scroll">
+                    <p class="block-scroll__child pad-all-medium bg-d-bal" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-hgh-x2" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-clenbutrol" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bt-yellow" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bt-anadrole" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-testo-max" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-decaduro" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-anvarol" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-midnight-blue" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-winsol" data-js="block-scroll-item">&nbsp;</p>
+                    <p class="block-scroll__child pad-all-medium bg-trenorol" data-js="block-scroll-item">&nbsp;</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+<script type="text/javascript" src="../js/app.js"></script></body>
+
+</html>
