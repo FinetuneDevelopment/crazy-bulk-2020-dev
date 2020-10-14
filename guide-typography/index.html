@@ -58,8 +58,53 @@
   </p>
 
   <main id="main">
+    <h1 class="container">Typography</h1>
+
+    <section class="gutter-large" aria-label="Bodytext">
+      <div class="container gutter-large">
+        <h2>Bodytext</h2>
+        <div class="row">
+          <section class="col-sm" aria-alebl="Normal bodytext">
+            <h3>Normal bodytext</h3>
+            <p>Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in
+              turpis. Phasellus lacinia pharetra consectetur. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
+          </section>
+          <section class="col-sm" arial-label="Large bodytext">
+            <h3>Large bodytext</h3>
+            <p class="lead">Use the class <code>lead</code> to creat large text. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in nisi, <b>this is bold text</b> commodo. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
+          </section>
+        </div>
+        <div class="row">
+          <section class="col-sm" aria-label="Small bodytext">
+            <h3>Small bodytext</h3>
+            <p class="small">Using class <code>small</code>. Mauris in tincidunt dolor. Sed placerat tortor id mattis lacinia. Sed mollis mi lorem, non mollis arcu molestie sed. Aliquam ullamcorper mattis mauris, at semper lorem efficitur ac.</p>
+            <p><small>Using the <code>small</code> tag. Etiam at rutrum magna. Duis at mauris mollis, posuere magna et, cursus metus. Integer vehicula efficitur purus non pulvinar. Sed ligula odio, malesuada quis semper eget, accumsan vitae massa.</small></p>
+          </section>
+          <section class="col-sm" aria-label="Caption text">
+            <h3>Caption text</h3>
+            <p class="caption">Using the <code>caption</code> class. Nunc sit amet arcu pellentesque, commodo metus quis, pellentesque leo. Morbi sit amet condimentum dui, placerat tincidunt lectus. Etiam consectetur metus vitae metus egestas dictum. Nam molestie ipsum quis elit gravida porta. Aliquam dignissim sodales nunc, in mattis dui sodales convallis. Sed dictum commodo accumsan. Integer posuere semper lectus, at commodo odio accumsan a. Phasellus nec velit eu mauris vulputate vehicula nec in mi.</p>
+            <p class="caption">Etiam at rutrum magna. Duis at mauris mollis, posuere magna et, cursus metus. Integer vehicula efficitur purus non pulvinar. Sed ligula odio, malesuada quis semper eget, accumsan vitae massa.</p>
+          </section>
+        </div>
+      </div>
+      <div class="bg-midnight-blue pad-vert-large">
+        <div class="container">
+          <div class="row">
+            <section class="col-sm" aria-label="Normal bodytext">
+              <h3>Normal bodytext</h3>
+              <p>Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in
+                turpis. Phasellus lacinia pharetra consectetur. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
+            </section>
+            <section class="col-sm" aria-label="Large bodytext">
+              <h3>Large bodytext</h3>
+              <p class="lead">Use the class <code>lead</code> to creat large text. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in nisi, <b>this is bold text</b> commodo. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
-      <h1>Typography</h1>
 
       <section class="gutter-large" aria-label="Lists">
         <h2>Lists</h2>
@@ -116,55 +161,99 @@
               <li>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</li>
             </ol>
           </section>
+          <section class="col" aria-label="Checklists">
+            <h3>Checklists</h3>
+            <p>Using a <code>checklist</code> class gives the following style:</p>
+            <ol class="checklist">
+              <li>Nam hendrerit tincidunt imperdiet</li>
+              <li>Etiam quis mollis massa</li>
+              <li>Donec et est ante</li>
+            </ol>
+            <ul class="checklist">
+              <li>Proin dapibus est et commodo mollis</li>
+              <li>Phasellus non nisi dapibus arcu luctus faucibus</li>
+              <li>Sed fringilla maximus sem nec maximus</li>
+              <li>Donec aliquet condimentum ante eget tempor</li>
+              <li>Ut vehicula, libero id eleifend suscipit, dolor sapien sollicitudin elit, vel placerat odio neque nec quam. Etiam malesuada porta orci et accumsan. Nulla in sollicitudin nulla, in vestibulum enim. Morbi tempus ante eu dui pulvinar, non fermentum dolor rutrum.</li>
+            </ul>
+          </section>
         </div>
       </section>
 
-    </div>
-
-    <section class="gutter-large" aria-label="Bodytext">
-      <div class="container gutter-large">
-        <h2>Bodytext</h2>
+      <section class="gutter-large" aria-label="Flags">
         <div class="row">
-          <section class="col-sm" aria-alebl="Normal bodytext">
-            <h3>Normal bodytext</h3>
-            <p>Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in
-              turpis. Phasellus lacinia pharetra consectetur. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
-          </section>
-          <section class="col-sm" arial-label="Large bodytext">
-            <h3>Large bodytext</h3>
-            <p class="lead">Use the class <code>lead</code> to creat large text. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in nisi, <b>this is bold text</b> commodo. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
-          </section>
-        </div>
-        <div class="row">
-          <section class="col-sm" aria-label="Small bodytext">
-            <h3>Small bodytext</h3>
-            <p class="small">Using class <code>small</code>. Mauris in tincidunt dolor. Sed placerat tortor id mattis lacinia. Sed mollis mi lorem, non mollis arcu molestie sed. Aliquam ullamcorper mattis mauris, at semper lorem efficitur ac.</p>
-            <p><small>Using the <code>small</code> tag. Etiam at rutrum magna. Duis at mauris mollis, posuere magna et, cursus metus. Integer vehicula efficitur purus non pulvinar. Sed ligula odio, malesuada quis semper eget, accumsan vitae massa.</small></p>
-          </section>
-          <section class="col-sm" aria-label="Caption text">
-            <h3>Caption text</h3>
-            <p class="caption">Using the <code>caption</code> class. Nunc sit amet arcu pellentesque, commodo metus quis, pellentesque leo. Morbi sit amet condimentum dui, placerat tincidunt lectus. Etiam consectetur metus vitae metus egestas dictum. Nam molestie ipsum quis elit gravida porta. Aliquam dignissim sodales nunc, in mattis dui sodales convallis. Sed dictum commodo accumsan. Integer posuere semper lectus, at commodo odio accumsan a. Phasellus nec velit eu mauris vulputate vehicula nec in mi.</p>
-            <p class="caption">Etiam at rutrum magna. Duis at mauris mollis, posuere magna et, cursus metus. Integer vehicula efficitur purus non pulvinar. Sed ligula odio, malesuada quis semper eget, accumsan vitae massa.</p>
-          </section>
-        </div>
-      </div>
-      <div class="bg-midnight-blue pad-vert-large">
-        <div class="container">
-          <div class="row">
-            <section class="col-sm" aria-label="Normal bodytext">
-              <h3>Normal bodytext</h3>
-              <p>Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in
-                turpis. Phasellus lacinia pharetra consectetur. Quisque at erat tellus. Aliquam velit nisi, <b>this is bold text</b> commodo id viverra eu, malesuada quis lectus. Aenean vel consectetur elit, ut tristique lectus. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus eu laoreet facilisis, volutpat id lacus. Proin cursus metus sit amet rhoncus dapibus. Sed ac lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
-            </section>
-            <section class="col-sm" aria-label="Large bodytext">
-              <h3>Large bodytext</h3>
-              <p class="lead">Use the class <code>lead</code> to creat large text. Nunc sed quam at ante mattis <strong>this is strong text</strong> faucibus et in nisi, <b>this is bold text</b> commodo. Sed convallis <em>this is emphasis text</em> ipsum et lorem maximus varius. Nulla nec vulputate justo. Integer dolor eros, <i>this is italic text</i> rhoncus lectus <a href="#">this is a link</a> nec leo porta aliquet. Donec dictum pretium <abbr title="British Broadcasting Corporation">BBC</abbr> est at tempus. Etiam non egestas tellus. Phasellus luctus malesuada magna, auctor ornare eros pretium sit amet.</p>
-            </section>
+          <div class="col-lg-8">
+            <h2>Flags</h2>
+            <p>Flags are short sentences or single words which protrude into panels in various ways.</p>
+            <p>The <code>flag</code> elements themselves are agnostic about position and can be used as inline elements, if required. In order to achieve the layouts below, a <code>punch</code> class should be added to the container and a positioning utility class should be added to the flag element. For example:</p>
+            <ul>
+              <li><code>pos-ne</code> - element is positioned to the top right</li>
+              <li><code>pos-sw</code> - element is positioned to the bottom left</li>
+            </ul>
+            <p>... and so on.</p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="row">
+          <div class="col">
+            <p class="punch pad-all-medium bg-d-bal"><span class="flag pos-ne">Default styling</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-hgh-x2"><span class="flag flag-east pos-ne">flag-east</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-clenbutrol"><span class="flag flag-west pos-nw">flag-west</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bt-yellow"><span class="flag flag-south pos-sw">flag-south</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="punch pad-all-medium bt-anadrole"><span class="flag pos-nw">Default styling</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-testo-max"><span class="flag flag-east pos-se">flag-east</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-decaduro"><span class="flag flag-west pos-sw">flag-west</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-anvarol"><span class="flag flag-south pos-se">flag-south</span></p>
+          </div>
+        </div>
+        <p>Flags can be modified with conditional classes to add colour.</p>
+        <div class="row">
+          <div class="col">
+            <p class="punch pad-all-medium bg-trenorol"><span class="flag pos-ne bg-d-bal">Sale</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-winsol"><span class="flag flag-east pos-ne bg-hgh-x2">20% extra</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-midnight-blue"><span class="flag flag-west pos-nw bg-clenbutrol">Natural ingredients</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-anvarol"><span class="flag flag-south pos-sw bt-yellow">New season</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="punch pad-all-medium bg-decaduro"><span class="flag pos-nw bt-anadrole">Best value</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-testo-max"><span class="flag flag-east pos-se bg-testo-max">Staff pick</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bt-anadrole"><span class="flag flag-west pos-sw bg-decaduro">Proven results</span></p>
+          </div>
+          <div class="col">
+            <p class="punch pad-all-medium bg-testo-max"><span class="flag flag-south pos-se bg-anvarol">Our best yet</span></p>
+          </div>
+        </div>
 
+      </section>
+
+    </div>
   </main>
 <script type="text/javascript" src="../js/app.js"></script></body>
 
