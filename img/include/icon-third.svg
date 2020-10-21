@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-label="Third gender">
+  <circle cx="9" cy="11" r="6"/>
+  <path d="m 9,17 v 6"/>
+  <path d="m 6,20 h 6"/>
+  <path d="M 14,7 19,3 H 15"/>
+  <path d="M 19,3 V 7"/>
+</svg>
