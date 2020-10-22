@@ -55,11 +55,19 @@
               <line x1="21" y1="21" x2="14" y2="14"></line>
             </svg>
           </label>
-          <p class="toggle-target flush">
-            <input type="search" name="search-text" id="search-text">
-            <button>Search</button>
-            <label for="toggle-search" title="Hide search">&times;<span class="sr-only"> Close search</span></label>
-          </p>
+          <fieldset class="toggle-target">
+            <legend><label for="search-text" class="sr-only">Search site</label></legend>
+            <div class="media">
+              <p class="media-body flush"><input type="search" name="search-text" id="search-text" placeholder="Enter search term" class="inp-small"></p>
+              <p class="text-nowrap flush">
+                <button class="btn btn-secondary btn-small btn-inline flush">Search</button>
+                <label for="toggle-search" class="btn btn-secondary btn-small btn-inline flush" title="Hide search">
+                  <span class="shape sh-close"></span>
+                  <span class="sr-only">Close search</span>
+                </label>
+              </p>
+            </div>
+          </fieldset>
         </form>
         <p class="col-2 d-md-none flush caption text-center">
           <label for="main-nav-toggle" aria-label="Toggle main navigation" class="btn ic-small">
@@ -75,14 +83,14 @@
             </svg>
           </a>
           <span class="d-none d-md-inline">&nbsp;</span>
-          <a href="#" class="ic-small text-nodec text-white caption btn text-center" title="Cart">
+          <label for="cart-toggle" class="ic-small caption btn text-center" title="Cart">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="Cart">
               <path d="M1 3h2.6C4.6 7.4 5 11.6 6 16c0 .4.6 1 1 1h14c1 0 1-1 0-1H7v-1h14c.4 0 1-.6 1-1l1-8c.1-.5-.5-1-1-1H5l-.4-2c-.1-.4-.3-1-.6-1H1C0 2 0 3 1 3z" />
               <circle r="2" cy="20" cx="10" />
               <circle cx="18" cy="20" r="2" />
             </svg>
             <span class="d-block d-md-none caption">Cart</span>
-          </a>
+          </label>
         </p>
       </div>
     </div><!-- .container -->
@@ -1401,7 +1409,7 @@
   </section>
 
   <!-- Quantity modal-->
-  <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay"></div>
+  <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
   <form class="dialog bt-white" role="dialog" aria-labelledby="dialog-title" data-js="dialog" action="https://crazybulk.com/cart" method="get">
     <header class="pad-horz-small pad-vert-tiny media brd-bottom brd-light-grey">
       <h2 class="h6 media-body flush" id="dialog-title">Select your ammount</h2>
@@ -1485,7 +1493,16 @@
     </footer>
   </form>
 
-  <!-- Slide out cart -->
+  <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
+  <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
+      <h2 class="sr-only" id="dialog-title"></h2>
+      <div class="punch">
+          <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
+      </div>
+      <div id="dialog-content"></div>
+  </aside>
+
+<!-- Slide out cart -->
   <input type="checkbox" name="cart-toggle" id="cart-toggle" class="sr-only cart-toggle pos-fixed">
   <div class="cart-pane">
     <label for="cart-toggle" class="pos-stretch bt-modal-shadow" title="Close cart"><span class="sr-only">Close cart</span></label>
@@ -1707,7 +1724,7 @@
         <div class="offset-lg-3 col-lg-3">
           <p class="h5"><a href="#" class="text-nodec text-white">Offers</a></p>
           <p class="h5"><a href="#" class="text-nodec text-white">Shop</a></p>
-          <p class="h5"><a href="#" class="text-nodec text-white">Product Finder</a></p>
+          <p class="h5"><a href="/crazy-bulk-2020-dev/product-finder/" class="text-nodec text-white">Product Finder</a></p>
         </div>
         <div class="col-lg-3">
           <p class="h5"><a href="#" class="text-nodec text-white">Programs &amp; Pro Davice</a></p>

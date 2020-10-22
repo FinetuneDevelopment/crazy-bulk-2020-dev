@@ -55,11 +55,19 @@
               <line x1="21" y1="21" x2="14" y2="14"></line>
             </svg>
           </label>
-          <p class="toggle-target flush">
-            <input type="search" name="search-text" id="search-text">
-            <button>Search</button>
-            <label for="toggle-search" title="Hide search">&times;<span class="sr-only"> Close search</span></label>
-          </p>
+                    <fieldset class="toggle-target">
+                        <legend><label for="search-text" class="sr-only">Search site</label></legend>
+                        <div class="media">
+                            <p class="media-body flush"><input type="search" name="search-text" id="search-text" placeholder="Enter search term" class="inp-small"></p>
+                            <p class="text-nowrap flush">
+                                <button class="btn btn-secondary btn-small btn-inline flush">Search</button>
+                                <label for="toggle-search" class="btn btn-secondary btn-small btn-inline flush" title="Hide search">
+                                    <span class="shape sh-close"></span>
+                                    <span class="sr-only">Close search</span>
+                                </label>
+                            </p>
+                        </div>
+                    </fieldset>
         </form>
         <p class="col-2 d-md-none flush caption text-center">
           <label for="main-nav-toggle" aria-label="Toggle main navigation" class="btn ic-small">
@@ -74,14 +82,14 @@
             </svg>
           </a>
           <span class="d-none d-md-inline">&nbsp;</span>
-          <a href="#" class="ic-small text-nodec text-white caption btn text-center" title="Cart">
+          <label for="cart-toggle" class="ic-small caption btn text-center" title="Cart">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="Cart">
               <path d="M1 3h2.6C4.6 7.4 5 11.6 6 16c0 .4.6 1 1 1h14c1 0 1-1 0-1H7v-1h14c.4 0 1-.6 1-1l1-8c.1-.5-.5-1-1-1H5l-.4-2c-.1-.4-.3-1-.6-1H1C0 2 0 3 1 3z" />
               <circle r="2" cy="20" cx="10" />
               <circle cx="18" cy="20" r="2" />
             </svg>
             <span class="d-block d-md-none caption">Cart</span>
-          </a>
+          </label>
         </p>
       </div>
     </div><!-- .container -->
@@ -856,8 +864,8 @@
     </div><!-- .container -->
   </form>
 
-  <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay"></div>
-  <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog">
+  <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
+  <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
     <h2 class="sr-only" id="dialog-title"></h2>
     <div class="punch">
       <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
@@ -865,7 +873,162 @@
     <div id="dialog-content"></div>
   </aside>
 
-  <footer class="bg-black pad-vert-large">
+    <!-- Slide out cart -->
+    <input type="checkbox" name="cart-toggle" id="cart-toggle" class="sr-only cart-toggle pos-fixed">
+    <div class="cart-pane">
+        <label for="cart-toggle" class="pos-stretch bt-modal-shadow" title="Close cart"><span class="sr-only">Close cart</span></label>
+        <div class="cart-pane__content punch bt-white">
+            <div class="cart-pane__items brd-top brd-light-grey pad-vert-small">
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anvarol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-anvarol"><span class="sr-only">Anvarol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Anvarol</h2>
+                            <p class="flush">Increases Your Energy<br>Reduces Your Hunger</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
+                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption">£98.85</p>
+                            <p class="lead text-testo-max">£65.95</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Female Cutting Stack">
+                    <header>
+                        <p class="d-table">
+                            <span class="d-table-cell prodsprite-small sp-anvarol"></span>
+                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
+                            <span class="d-table-cell prodsprite-small sp-winsol"></span>
+                        </p>
+                        <h2 class="h6 flush">Female Cutting Stack</h2>
+                        <p class="flush">The ultimate combination for ladies who lift.</p>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£136.27</del></p>
+                            <p class="lead text-testo-max">£93.65</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anadrole">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-anadrole"><span class="sr-only">Anadrole</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Anadrole</h2>
+                            <p class="flush">Allows You To Workout Longer, Recover Quicker</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="lead text-testo-max">£32.99</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Ultimate Stack">
+                    <header>
+                        <p class="d-table">
+                            <span class="d-table-cell prodsprite-small sp-d-bal"></span>
+                            <span class="d-table-cell prodsprite-small sp-trenorol"></span>
+                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
+                            <span class="d-table-cell prodsprite-small sp-testo-max"></span>
+                            <span class="d-table-cell prodsprite-small sp-decaduro"></span>
+                            <span class="d-table-cell prodsprite-small sp-anadrole"></span>
+                        </p>
+                        <h2 class="h6 flush">Ultimate Stack</h2>
+                        <p class="flush">Improve muscle growth, strength, recovery and fat loss</p>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£215.78</del></p>
+                            <p class="lead text-testo-max">£165.95</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Trenorol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-trenorol"><span class="sr-only">Trenorol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Trenorol</h2>
+                            <p class="flush">Converts More Protein to Muscle Mass</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
+                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£73.89</del></p>
+                            <p class="lead text-testo-max">£49.27</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Winsol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-winsol"><span class="sr-only">Winsol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Winsol</h2>
+                            <p class="flush">Increases Your Focus, Energy And Strength</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="lead text-testo-max">£36.95</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <footer class="cart-pane__total brd-top mt-auto">
+                <div class="media small">
+                    <p class="media-body flush">Shipping:</p>
+                    <p class="ml-3 flush">Free</p>
+                </div>
+                <div class="media">
+                    <p class="media-body lead">Total:</p>
+                    <p class="ml-3 lead">£444.76</p>
+                </div>
+                <p class="flush"><a href="#" class="btn btn-primary flush">Proceed to checkout</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <footer class="bg-black pad-vert-large">
     <div class="container">
       <div class="row">
         <section class="col-lg-3" aria-label="Get in touch">
@@ -913,7 +1076,7 @@
         <div class="offset-lg-3 col-lg-3">
           <p class="h5"><a href="#" class="text-nodec text-white">Offers</a></p>
           <p class="h5"><a href="#" class="text-nodec text-white">Shop</a></p>
-          <p class="h5"><a href="#" class="text-nodec text-white">Product Finder</a></p>
+          <p class="h5"><a href="/crazy-bulk-2020-dev/product-finder/" class="text-nodec text-white">Product Finder</a></p>
         </div>
         <div class="col-lg-3">
           <p class="h5"><a href="#" class="text-nodec text-white">Programs &amp; Pro Davice</a></p>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Account | CrazyBulk</title>
+    <title>My Orders | CrazyBulk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Note: this needs to be trimmed down -->
     <link rel="preload" as="font" href="/crazy-bulk-2020-dev/fonts/inter-black.9cbf35.woff2" type="font/woff2" crossorigin>
@@ -22,12 +22,12 @@
     <link rel="preload" as="font" href="/crazy-bulk-2020-dev/fonts/oswald-semibold.adde8f.woff2" type="font/woff2" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="HandheldFriendly" content="true">
-    <meta name="description" content="Your account">
-    <meta property="og:description" content="Your account">
+    <meta name="description" content="Your Orders">
+    <meta property="og:description" content="Your Orders">
     <meta property="og:title" content="CrazyBulk">
     <meta property="fb:admins" content="199601997065893">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/crazy-bulk-2020-dev/account/">
+    <meta property="og:url" content="/crazy-bulk-2020-dev/account/orders/">
     <meta property="og:site_name" content="CrazyBulk">
     <meta property="og:image" content="/crazy-bulk-2020-dev/img/og/og-all-products.png">
     <meta itemprop="image" content="/crazy-bulk-2020-dev/img/og/og-all-products.png">
@@ -39,7 +39,7 @@
     <link rel="mask-icon" href="/crazy-bulk-2020-dev/img/favicon/safari-pinned-tab.svg" color="#030113">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#fdd20e">
-<link href="../../css/app.css" rel="stylesheet"></head>
+</head>
 
 <body>
     <a href="#main" class="skip bg-anvarol caption text-uppercase text-breath pad-vert-tiny d-print-none">Skip to content <span class="shape sh-chev-down"></span></a>
@@ -55,11 +55,19 @@
                             <line x1="21" y1="21" x2="14" y2="14"></line>
                         </svg>
                     </label>
-                    <p class="toggle-target flush">
-                        <input type="search" name="search-text" id="search-text">
-                        <button>Search</button>
-                        <label for="toggle-search" title="Hide search">&times;<span class="sr-only"> Close search</span></label>
-                    </p>
+                    <fieldset class="toggle-target">
+                        <legend><label for="search-text" class="sr-only">Search site</label></legend>
+                        <div class="media">
+                            <p class="media-body flush"><input type="search" name="search-text" id="search-text" placeholder="Enter search term" class="inp-small"></p>
+                            <p class="text-nowrap flush">
+                                <button class="btn btn-secondary btn-small btn-inline flush">Search</button>
+                                <label for="toggle-search" class="btn btn-secondary btn-small btn-inline flush" title="Hide search">
+                                    <span class="shape sh-close"></span>
+                                    <span class="sr-only">Close search</span>
+                                </label>
+                            </p>
+                        </div>
+                    </fieldset>
                 </form>
                 <p class="col-2 d-md-none flush caption text-center">
                     <label for="main-nav-toggle" aria-label="Toggle main navigation" class="btn ic-small">
@@ -75,14 +83,14 @@
                         </svg>
                     </a>
                     <span class="d-none d-md-inline">&nbsp;</span>
-                    <a href="#" class="ic-small text-nodec text-white caption btn text-center" title="Cart">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="Cart">
-                            <path d="M1 3h2.6C4.6 7.4 5 11.6 6 16c0 .4.6 1 1 1h14c1 0 1-1 0-1H7v-1h14c.4 0 1-.6 1-1l1-8c.1-.5-.5-1-1-1H5l-.4-2c-.1-.4-.3-1-.6-1H1C0 2 0 3 1 3z" />
-                            <circle r="2" cy="20" cx="10" />
-                            <circle cx="18" cy="20" r="2" />
-                        </svg>
-                        <span class="d-block d-md-none caption">Cart</span>
-                    </a>
+          <label for="cart-toggle" class="ic-small caption btn text-center" title="Cart">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-label="Cart">
+              <path d="M1 3h2.6C4.6 7.4 5 11.6 6 16c0 .4.6 1 1 1h14c1 0 1-1 0-1H7v-1h14c.4 0 1-.6 1-1l1-8c.1-.5-.5-1-1-1H5l-.4-2c-.1-.4-.3-1-.6-1H1C0 2 0 3 1 3z" />
+              <circle r="2" cy="20" cx="10" />
+              <circle cx="18" cy="20" r="2" />
+            </svg>
+            <span class="d-block d-md-none caption">Cart</span>
+          </label>
                 </p>
             </div>
         </div><!-- .container -->
@@ -373,8 +381,8 @@
                         </div>
                     </aside>
                     <div class="col-md-1 bt-light-grey"></div>
-                    <section class="col-md-8 pad-vert-large bt-light-grey" aria-label="My Account">
-                        <h2 class="h3">My Account</h2>
+                    <section class="col-md-8 pad-vert-large bt-light-grey" aria-label="My Orders">
+                        <h2 class="h3">My Orders</h2>
 
                         <section class="brd-top brd-bottom pad-vert-medium" aria-label="Recent Orders">
                             <h3 class="h6">Recent Orders</h3>
@@ -399,94 +407,112 @@
                             <div class="row">
                                 <p class="col-lg-4 col-md-6 col-sm-8"><a href="#" class="btn btn-secondary">Track my order</a></p>
                             </div>
-                            <p class="flush"><a href="#" class="btn btn-transparent">View all orders <span class="shape sh-chev-right"></span></a></p>
-                        </section>
 
-                        <section class="brd-bottom pad-vert-medium" aria-label="My Recommendation">
-                            <h3 class="h6">My Recommendation</h3>
-                            <figure class="d-table">
-                                <p class="d-table-cell prodsprite-medium sp-anadrole"></p>
-                                <p class="d-table-cell prodsprite-medium sp-d-bal"></p>
-                                <p class="d-table-cell prodsprite-medium sp-trenorol"></p>
-                                <p class="d-table-cell prodsprite-medium sp-testo-max"></p>
-                                <p class="d-table-cell prodsprite-medium sp-winsol"></p>
-                                <figcaption class="sr-only">Product stack including Anadrole, D-Bal, Trenorol, Testo Max and Winsol</figcaption>
-                            </figure>
-                            <div class="row">
-                                <p class="col-lg-4 col-md-6 col-sm-8 flush"><a href="/crazy-bulk-2020-dev/product/personal-stack/" class="btn btn-secondary">Find out more<span class="sr-only"> about My Recommendation</span></a></p>
-                            </div>
-                        </section>
+                            <hr class="brd-grey">
 
-                        <section class="brd-bottom pad-vert-medium" aria-label="Address Book">
-                            <h3 class="h6">Address Book</h3>
                             <div class="row">
-                                <div class="col">
-                                    <p class="caption text-uppercase">Default address</p>
-                                    <p>
-                                        <strong>Boris Johnson</strong><br>
-                                        10 Downing St<br>
-                                        Westminster<br>
-                                        London<br>
-                                        SW1A 2AA
-                                    </p>
-                                    <div class="row">
-                                        <p class="col-lg-8 col-md-10">
-                                            <a href="#" class="btn btn-secondary">Edit address</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <p class="caption"><a href="#" class="text-uppercase">Set as default</a></p>
-                                    <p>
-                                        <strong>Boris Johnson</strong><br>
-                                        Chequers<br>
-                                        Missenden Rd<br>
-                                        Aylesbury<br>
-                                        HP17 0UZ
-                                    </p>
-                                    <div class="row">
-                                        <p class="col-lg-8 col-md-10">
-                                            <a href="#" class="btn btn-secondary">Edit address</a>
-                                        </p>
-                                    </div>
-                                </div>
+                                <section class="col-6 col-md" aria-label="Order number">
+                                    <h4 class="type-body caption">Order <abbr title="number">no.</abbr></h4>
+                                    <p class="lead">#333668</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Shipping Status">
+                                    <h4 class="type-body caption">Shipping Status</h4>
+                                    <p class="lead">Delivered <span class="shape sh-yes text-testo-max"></span></p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Date">
+                                    <h4 class="type-body caption">Date</h4>
+                                    <p class="lead">#13/04/20</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Total">
+                                    <h4 class="type-body caption">Total</h4>
+                                    <p class="lead">£110.95</p>
+                                </section>
                             </div>
-                            <p class="flush"><a href="#" class="btn btn-transparent caption">View all addresses <span class="shape sh-chev-right"></span></a></p>
-                        </section>
 
-                        <section class="brd-bottom pad-vert-medium gutter-large" aria-label="Saved Cards">
-                            <h3 class="h6">Saved Cards</h3>
+                            <hr class="brd-grey">
+
                             <div class="row">
-                                <div class="col">
-                                    <p class="caption text-uppercase">Default Card</p>
-                                    <p>
-                                        <strong>Boris Johnson</strong><br>
-                                        Visa<br>
-                                        **** **** **** 2468<br>
-                                        <abbr title="Expires">Exp.</abbr> 12/20
-                                    </p>
-                                    <div class="row">
-                                        <p class="col-lg-8 col-md-10">
-                                            <a href="#" class="btn btn-secondary">Edit Card</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <p class="caption"><a href="#" class="text-uppercase">Set as default</a></p>
-                                    <p>
-                                        <strong>Boris Johnson</strong><br>
-                                        Mastercard<br>
-                                        **** **** **** 1666<br>
-                                        <abbr>Exp.</abbr> 01/21
-                                    </p>
-                                    <div class="row">
-                                        <p class="col-lg-8 col-md-10">
-                                            <a href="#" class="btn btn-secondary">Edit Card</a>
-                                        </p>
-                                    </div>
-                                </div>
+                                <section class="col-6 col-md" aria-label="Order number">
+                                    <h4 class="type-body caption">Order <abbr title="number">no.</abbr></h4>
+                                    <p class="lead">#330258</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Shipping Status">
+                                    <h4 class="type-body caption">Shipping Status</h4>
+                                    <p class="lead">Delivered <span class="shape sh-yes text-testo-max"></span></p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Date">
+                                    <h4 class="type-body caption">Date</h4>
+                                    <p class="lead">#15/12/19</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Total">
+                                    <h4 class="type-body caption">Total</h4>
+                                    <p class="lead">£95.95</p>
+                                </section>
                             </div>
-                            <p class="flush"><a href="#" class="btn btn-transparent caption">View all cards <span class="shape sh-chev-right"></span></a></p>
+
+                            <hr class="brd-grey">
+
+                            <div class="row">
+                                <section class="col-6 col-md" aria-label="Order number">
+                                    <h4 class="type-body caption">Order <abbr title="number">no.</abbr></h4>
+                                    <p class="lead">#300148</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Shipping Status">
+                                    <h4 class="type-body caption">Shipping Status</h4>
+                                    <p class="lead">Delivered <span class="shape sh-yes text-testo-max"></span></p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Date">
+                                    <h4 class="type-body caption">Date</h4>
+                                    <p class="lead">#01/08/19</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Total">
+                                    <h4 class="type-body caption">Total</h4>
+                                    <p class="lead">£22.95</p>
+                                </section>
+                            </div>
+
+                            <hr class="brd-grey">
+
+                            <div class="row">
+                                <section class="col-6 col-md" aria-label="Order number">
+                                    <h4 class="type-body caption">Order <abbr title="number">no.</abbr></h4>
+                                    <p class="lead">#299987</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Shipping Status">
+                                    <h4 class="type-body caption">Shipping Status</h4>
+                                    <p class="lead">Delivered <span class="shape sh-yes text-testo-max"></span></p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Date">
+                                    <h4 class="type-body caption">Date</h4>
+                                    <p class="lead">#30/02/19</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Total">
+                                    <h4 class="type-body caption">Total</h4>
+                                    <p class="lead">£255.95</p>
+                                </section>
+                            </div>
+
+                            <hr class="brd-grey">
+
+                            <div class="row">
+                                <section class="col-6 col-md" aria-label="Order number">
+                                    <h4 class="type-body caption">Order <abbr title="number">no.</abbr></h4>
+                                    <p class="lead">#295456</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Shipping Status">
+                                    <h4 class="type-body caption">Shipping Status</h4>
+                                    <p class="lead">Delivered <span class="shape sh-yes text-testo-max"></span></p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Date">
+                                    <h4 class="type-body caption">Date</h4>
+                                    <p class="lead">#18/01/19</p>
+                                </section>
+                                <section class="col-6 col-md" aria-label="Total">
+                                    <h4 class="type-body caption">Total</h4>
+                                    <p class="lead">£75.90</p>
+                                </section>
+                            </div>
+
                         </section>
 
                     </section>
@@ -494,6 +520,170 @@
             </div>
         </div>
     </main>
+
+    <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
+    <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
+        <h2 class="sr-only" id="dialog-title"></h2>
+        <div class="punch">
+            <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
+        </div>
+        <div id="dialog-content"></div>
+    </aside>
+
+    <!-- Slide out cart -->
+    <input type="checkbox" name="cart-toggle" id="cart-toggle" class="sr-only cart-toggle pos-fixed">
+    <div class="cart-pane">
+        <label for="cart-toggle" class="pos-stretch bt-modal-shadow" title="Close cart"><span class="sr-only">Close cart</span></label>
+        <div class="cart-pane__content punch bt-white">
+            <div class="cart-pane__items brd-top brd-light-grey pad-vert-small">
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anvarol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-anvarol"><span class="sr-only">Anvarol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Anvarol</h2>
+                            <p class="flush">Increases Your Energy<br>Reduces Your Hunger</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
+                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption">£98.85</p>
+                            <p class="lead text-testo-max">£65.95</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Female Cutting Stack">
+                    <header>
+                        <p class="d-table">
+                            <span class="d-table-cell prodsprite-small sp-anvarol"></span>
+                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
+                            <span class="d-table-cell prodsprite-small sp-winsol"></span>
+                        </p>
+                        <h2 class="h6 flush">Female Cutting Stack</h2>
+                        <p class="flush">The ultimate combination for ladies who lift.</p>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£136.27</del></p>
+                            <p class="lead text-testo-max">£93.65</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anadrole">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-anadrole"><span class="sr-only">Anadrole</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Anadrole</h2>
+                            <p class="flush">Allows You To Workout Longer, Recover Quicker</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="lead text-testo-max">£32.99</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Ultimate Stack">
+                    <header>
+                        <p class="d-table">
+                            <span class="d-table-cell prodsprite-small sp-d-bal"></span>
+                            <span class="d-table-cell prodsprite-small sp-trenorol"></span>
+                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
+                            <span class="d-table-cell prodsprite-small sp-testo-max"></span>
+                            <span class="d-table-cell prodsprite-small sp-decaduro"></span>
+                            <span class="d-table-cell prodsprite-small sp-anadrole"></span>
+                        </p>
+                        <h2 class="h6 flush">Ultimate Stack</h2>
+                        <p class="flush">Improve muscle growth, strength, recovery and fat loss</p>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£215.78</del></p>
+                            <p class="lead text-testo-max">£165.95</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Trenorol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-trenorol"><span class="sr-only">Trenorol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Trenorol</h2>
+                            <p class="flush">Converts More Protein to Muscle Mass</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
+                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="flush caption"><del>£73.89</del></p>
+                            <p class="lead text-testo-max">£49.27</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Winsol">
+                    <header class="media">
+                        <p class="mr-3 flush"><span class="prodsprite-small sp-winsol"><span class="sr-only">Winsol</span></span></p>
+                        <div class="media-body">
+                            <h2 class="h6 flush">Winsol</h2>
+                            <p class="flush">Increases Your Focus, Energy And Strength</p>
+                        </div>
+                    </header>
+                    <div class="d-md-flex gutter-base">
+                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
+                    </div>
+                    <div class="row align-items-end">
+                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
+                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
+                        <div class="col-auto text-right">
+                            <p class="lead text-testo-max">£36.95</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <footer class="cart-pane__total brd-top mt-auto">
+                <div class="media small">
+                    <p class="media-body flush">Shipping:</p>
+                    <p class="ml-3 flush">Free</p>
+                </div>
+                <div class="media">
+                    <p class="media-body lead">Total:</p>
+                    <p class="ml-3 lead">£444.76</p>
+                </div>
+                <p class="flush"><a href="#" class="btn btn-primary flush">Proceed to checkout</a></p>
+            </footer>
+        </div>
+    </div>
 
     <footer class="bg-black pad-vert-large">
         <div class="container">
@@ -543,7 +733,7 @@
                 <div class="offset-lg-3 col-lg-3">
                     <p class="h5"><a href="#" class="text-nodec text-white">Offers</a></p>
                     <p class="h5"><a href="#" class="text-nodec text-white">Shop</a></p>
-                    <p class="h5"><a href="#" class="text-nodec text-white">Product Finder</a></p>
+                    <p class="h5"><a href="/crazy-bulk-2020-dev/product-finder/" class="text-nodec text-white">Product Finder</a></p>
                 </div>
                 <div class="col-lg-3">
                     <p class="h5"><a href="#" class="text-nodec text-white">Programs &amp; Pro Davice</a></p>
@@ -551,13 +741,13 @@
                 </div>
             </div>
             <p class="text-right brd-bottom brd-white">
-                <span class="ic-big">
+                <a href="/crazy-bulk-2020-dev/" class="ic-big text-white" title="Return to the home page">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-label="CrazyBulk">
                         <path d="M20 4l-7.4.4V6l1.4.3v8l-1.4.7v1.3l6.4.3c4 .4 5.7-5.4 1.3-6.6 2.7-.6 3.3-5.3-.3-6zm-1.4 2.2c1 0 2 2.2-.3 3h-1.6v-3H18.6zm-2 4.8h2c1.7 0 2.1 3.3 0 3.4l-1.9-.1V11z" />
                         <path d="M11.2 8V5a13 13 0 00-5-1C3.3 4 1 6 1 11c.3 2.3.4 4.7 4 5.7 2.7.2 4.7-.7 6.5-2l-1-1.7C6.6 16 4 14 4 10.6c.3-4.6 2-5 5-4L9.5 8z" />
                         <path d="M1.3 18a57.8 57.8 0 0121.7.3v1.4c0 .2-.1.3-.3.3a57.8 57.8 0 00-21.4 0c-.2 0-.3-.1-.3-.3v-1.4c0-.2.1-.3.3-.3z" fill="#fdd20e" />
                     </svg>
-                </span>
+                </a>
             </p>
             <div class="row small">
                 <p class="col flush">&copy; CrazyBulk 2020. All rights reserved.</p>
@@ -569,6 +759,13 @@
                     <a href="/crazy-bulk-2020-dev/privacy-policy/" class="text-white">Privacy Policy</a>
                 </p>
             </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
         </div>
     </footer>
 

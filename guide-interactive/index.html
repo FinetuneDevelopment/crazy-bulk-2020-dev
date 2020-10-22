@@ -48,6 +48,7 @@
         <a href="/crazy-bulk-2020-dev/guide-home/">Home</a>
         <a href="/crazy-bulk-2020-dev/guide-typeface/">Typefaces</a>
         <a href="/crazy-bulk-2020-dev/guide-typography/">Typography</a>
+        <a href="/crazy-bulk-2020-dev/guide-table/">Table</a>
         <a href="/crazy-bulk-2020-dev/guide-heading/">Headings</a>
         <a href="/crazy-bulk-2020-dev/guide-colour/">Colour</a>
         <a href="/crazy-bulk-2020-dev/guide-button/">Buttons</a>
@@ -176,8 +177,109 @@
                 </div>
             </section>
 
+            <section class="gutter-large" aria-label="Dialog">
+                <h2>Dialog</h2>
+                <div class="row">
+                    <div class="col-7 col-sm-9 col-md-10 col-lg-8">
+                        <p>The markup for dialog boxes needs to live close to the ending body tag, for positioning reasons. The JavaScript also only expects one copy of that markup. This introduces two issues:</p>
+                        <ol>
+                            <li>How do we have more than one dialog box on the page?</li>
+                            <li>What if the content we want to have inside the dialog box is nested deep in the markup?</li>
+                        </ol>
+                        <p>For these reasons, the copy for the dialog box can sit wherever it is required and is copied into the dialog box only once the user triggers the dialog box to spawn.</p>
+
+                        <div class="row">
+                            <p class="col"><button class="btn btn-secondary" type="button" data-js="dialog-open" data-contentid="dialog-markup" data-heading="Markup">Open markup dialog</button></p>
+                            <p class="col"><button class="btn btn-secondary" type="button" data-js="dialog-open" data-contentid="dialog-example" data-heading="Example">Open example dialog</button></p>
+                        </div>
+
+                        <div id="dialog-markup" hidden>
+                            <p>In order to spawn the dialog box, you'll need a button tag with the attribute <code>data-js="dialog-open"</code>. It also takes two other <code>data</code> paramaters:</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Use</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">data-contentid</th>
+                                        <td>The unique ID of an element anywhere in the markup, which has the content inside. Note that this element should also have the attribute <code>hidden</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">data-heading</th>
+                                        <td>A string which represents the heading of the dialog box (this will appear in the markup, but not display)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div id="dialog-example" hidden>
+                            <p>Integer venenatis elementum diam, non gravida sapien auctor vitae. Maecenas dapibus condimentum eros nec maximus. Donec eu suscipit tellus, non ullamcorper nibh. Sed dapibus efficitur aliquam. Fusce ut augue suscipit, accumsan tellus vitae, pretium turpis. Sed sed massa vitae ipsum fringilla vulputate.</p>
+                            <p>Fusce eu aliquam tortor. Proin id ligula eu felis viverra pretium ac sit amet ligula. Donec eu mi in nulla convallis blandit id et massa. Sed tempor, metus elementum pulvinar finibus, tellus ipsum facilisis urna, facilisis ullamcorper lacus magna efficitur nulla. Nullam pharetra scelerisque finibus. Etiam suscipit purus at aliquet porta. </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="gutter-large" aria-label="Flyout (small)">
+                <h2>Flyout (small)</h2>
+                <div class="row">
+                    <div class="col-md">
+                        <input type="radio" name="flyout" id="flyout-example1" class="flyout-sm__control sr-only" data-js="toggle">
+                        <label for="flyout-example1" class="flyout-sm__trigger media" data-js="label-toggle">
+                            <span class="media-body h5">Flyout example one</span>
+                            <span class="d-md-none ml-3 flyout-sm__icon align-self-center text-anvarol"><span class="shape sh-chev-up"></span></span>
+                        </label>
+                        <div class="punch">
+                            <div class="flyout-sm__details pad-all-small bt-mid-grey">
+                                <p>Sometimes, content needs to hide within a flyout panel, but only on mobile. This allows the content to appear normally in breakpoints above <code>sm</code>, but automatically hides on mobile, with the ability for the user to toggle it on and off.</p>
+                                <p class="d-md-none brd-top brd-light-grey">
+                                    <label for="flyout-example1" class="btn btn-transparent d-block text-center" title="Close menu" data-js="label-toggle">
+                                        <span class="shape sh-chev-up"></span>
+                                        <span class="sr-only">Close menu</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <input type="radio" name="flyout" id="flyout-example2" class="flyout-sm__control sr-only" data-js="toggle">
+                        <label for="flyout-example2" class="flyout-sm__trigger media" data-js="label-toggle">
+                            <span class="media-body h5">Checkbox verses radio</span>
+                            <span class="d-md-none ml-3 flyout-sm__icon align-self-center text-anvarol"><span class="shape sh-chev-up"></span></span>
+                        </label>
+                        <div class="punch">
+                            <div class="flyout-sm__details pad-all-small bt-testo-max">
+                                <p>Where two flyouts might overlap each other in awkward ways, if you link together the two input elements as radio buttons, this ensures that as soon as one opens, the other will close.</p>
+                                <p>As there is no native functionality to deselect radio buttons, once they have first been selected, adding an attribute of <code>data-js="label-toggle"</code> onto the <code>label</code> element allows this to happen.</p>
+                                <p>If there is only one flyout in the immediate area, a checkbox will be all that is required.</p>
+                                <p class="d-md-none brd-top brd-light-grey">
+                                    <label for="flyout-example1" class="btn btn-transparent d-block text-center" title="Close menu" data-js="label-toggle">
+                                        <span class="shape sh-chev-up"></span>
+                                        <span class="sr-only">Close menu</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </main>
+
+    <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
+    <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
+      <h2 class="sr-only" id="dialog-title"></h2>
+      <div class="punch">
+        <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
+      </div>
+      <div id="dialog-content"></div>
+    </aside>
+
 <script type="text/javascript" src="../js/app.js"></script></body>
 
 </html>
