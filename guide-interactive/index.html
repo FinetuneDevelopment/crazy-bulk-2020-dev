@@ -190,7 +190,7 @@
 
                         <div class="row">
                             <p class="col"><button class="btn btn-secondary" type="button" data-js="dialog-open" data-contentid="dialog-markup" data-heading="Markup">Open markup dialog</button></p>
-                            <p class="col"><button class="btn btn-secondary" type="button" data-js="dialog-open" data-contentid="dialog-example" data-heading="Example">Open example dialog</button></p>
+                            <p class="col"><button class="btn btn-secondary" type="button" data-js="dialog-open" data-contentid="dialog-limitations" data-heading="Example">Method limitations</button></p>
                         </div>
 
                         <div id="dialog-markup" hidden>
@@ -215,9 +215,9 @@
                             </table>
                         </div>
 
-                        <div id="dialog-example" hidden>
-                            <p>Integer venenatis elementum diam, non gravida sapien auctor vitae. Maecenas dapibus condimentum eros nec maximus. Donec eu suscipit tellus, non ullamcorper nibh. Sed dapibus efficitur aliquam. Fusce ut augue suscipit, accumsan tellus vitae, pretium turpis. Sed sed massa vitae ipsum fringilla vulputate.</p>
-                            <p>Fusce eu aliquam tortor. Proin id ligula eu felis viverra pretium ac sit amet ligula. Donec eu mi in nulla convallis blandit id et massa. Sed tempor, metus elementum pulvinar finibus, tellus ipsum facilisis urna, facilisis ullamcorper lacus magna efficitur nulla. Nullam pharetra scelerisque finibus. Etiam suscipit purus at aliquet porta. </p>
+                        <div id="dialog-limitations" hidden>
+                            <p>This method copies a chunk of markup from one place in the DOM and pastes it into the dialog container, which is found close to the footer. This means that any IDs are duplicated.</p>
+                            <p>In order for elements such as <code>label</code>s to still function as expected, all <code>ID</code> attributes and <code>for</code> attributes on <code>label</code> tags are changed, to add <code>1</code> onto the end of them. For example, <code>forename</code> will become <code>forname1</code>.</p>
                         </div>
 
                     </div>
@@ -273,7 +273,7 @@
 
     <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
     <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
-      <h2 class="sr-only" id="dialog-title"></h2>
+      <h2 class="sr-only" id="dialog-title">Dialog</h2>
       <div class="punch">
         <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
       </div>

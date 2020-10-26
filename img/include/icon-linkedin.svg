@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" aria-label="LinkedIn" fill="currentColor" viewBox="0 0 24 24">
+  <rect ry="0" y="9" x="1" height="14" width="5"/>
+  <circle r="2.5" cy="4.5" cx="3.5"/>
+  <path d="M 8,23 V 9 h 5 v 2 c 0,-2 9,-5 10,4 v 8 h -5 v -8 c 0,-4 -5,-3 -5,0 v 8 z"/>
+</svg>

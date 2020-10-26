@@ -312,8 +312,8 @@
 
         <div class="row">
           <fieldset class="col-sm-4">
-            <legend class="sr-only">Radio buttons</legend>
-            <h2 class="h4">Radio buttons</h2>
+            <legend class="sr-only">Default radio buttons</legend>
+            <h2 class="h4">Default radio buttons</h2>
             <p class="form-molecule">
               <input type="radio" name="radio-ingredients" value="radio-capsimax-powder" id="radio-capsimax-powder">
               <label for="radio-capsimax-powder">Capsimax Powder</label>
@@ -337,8 +337,8 @@
           </fieldset>
 
           <fieldset class="col-sm-4">
-            <legend class="sr-only">checkbox buttons</legend>
-            <h2 class="h4">Checkbox buttons</h2>
+            <legend class="sr-only">Default checkbox</legend>
+            <h2 class="h4">Default checkbox</h2>
             <p class="form-molecule">
               <input type="checkbox" name="checkbox-ingredients" value="checkbox-capsimax-powder" id="checkbox-capsimax-powder">
               <label for="checkbox-capsimax-powder">Capsimax Powder</label>
@@ -370,6 +370,111 @@
           </div>
 
         </div><!-- .row -->
+
+        <div class="row">
+          <fieldset class="col-sm-4">
+            <legend class="sr-only">Radiocheck radio buttons</legend>
+            <h2 class="h4">Radiocheck radio buttons</h2>
+            <p>
+              <input type="radio" id="datechoice-this-month" name="datechoice" class="sr-only">
+              <label for="datechoice-this-month" class="choice-radiocheck__trigger">
+                The past month
+              </label>
+            </p>
+            <p>
+              <input type="radio" id="datechoice-6-month" name="datechoice" class="sr-only">
+              <label for="datechoice-6-month" class="choice-radiocheck__trigger">
+                The past six months
+              </label>
+            </p>
+            <p>
+              <input type="radio" id="datechoice-past-year" name="datechoice" class="sr-only">
+              <label for="datechoice-past-year" class="choice-radiocheck__trigger">
+                A year in the past
+              </label>
+            </p>
+            <p>
+              <input type="radio" id="datechoice-all-time" name="datechoice" class="sr-only" checked>
+              <label for="datechoice-all-time" class="choice-radiocheck__trigger">
+                All time
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="col-sm-4">
+            <legend class="sr-only">Radiocheck checkbox</legend>
+            <h2 class="h4">Radiocheck checkbox</h2>
+            <p>
+              <input type="checkbox" id="trainingchoice-lifting" name="trainingchoice-lifting" class="sr-only" checked>
+              <label for="trainingchoice-lifting" class="choice-radiocheck__trigger">
+                Lifting
+              </label>
+            </p>
+            <p>
+              <input type="checkbox" id="trainingchoice-hiit" name="trainingchoice-hiit" class="sr-only">
+              <label for="trainingchoice-hiit" class="choice-radiocheck__trigger">
+                <abbr title="High-intensity interval training">HIIT</abbr>
+              </label>
+            </p>
+            <p>
+              <input type="checkbox" id="trainingchoice-cardio" name="trainingchoice-cardio" class="sr-only">
+              <label for="trainingchoice-cardio" class="choice-radiocheck__trigger">
+                Cardio
+              </label>
+            </p>
+            <p>
+              <input type="checkbox" id="trainingchoice-endurance" name="trainingchoice-endurance" class="sr-only">
+              <label for="trainingchoice-endurance" class="choice-radiocheck__trigger">
+                Endurance
+              </label>
+            </p>
+          </fieldset>
+
+          <div class="col-sm">
+            <h2 class="h4">Buttons designed to sit alongside input elements</h2>
+            <div class="media">
+              <p class="form-molecule media-body">
+                <input type="search" name="svg-search" id="svg-search" placeholder="Used with an SVG">
+                <label for="svg-search">Used with an SVG</label>
+              </p>
+              <p>
+                <button class="btn btn-input">
+                  <span class="ic-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Search">
+                      <circle cx="9" cy="9" r="7"></circle>
+                      <line x1="21" y1="21" x2="14" y2="14"></line>
+                    </svg>
+                  </span>
+                  <span class="sr-only">Search</span>
+                </button>
+              </p>
+            </div>
+
+            <div class="media">
+              <p class="form-molecule media-body">
+                <input type="search" name="shape-search" id="shape-search" placeholder="Used with a CSS shape">
+                <label for="shape-search">Used with a CSS shape</label>
+              </p>
+              <p>
+                <button class="btn btn-input">
+                  <span class="shape sh-yes"></span>
+                  <span class="sr-only">Search</span>
+                </button>
+              </p>
+            </div>
+
+            <div class="media">
+              <p class="form-molecule media-body">
+                <input type="search" name="text-search" id="text-search" placeholder="Used with text">
+                <label for="text-search">Used with text</label>
+              </p>
+              <p><button class="btn btn-input">Search</button></p>
+            </div>
+
+          </div>
+
+        </div><!-- .row -->
+
         <p><input type="submit" value="Submit" class="btn btn-primary"></p>
       </fieldset>
 
