@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Reading List | CrazyBulk</title>
+    <title>Cart | CrazyBulk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Note: this needs to be trimmed down -->
     <link rel="preload" as="font" href="/crazy-bulk-2020-dev/fonts/inter-black.9cbf35.woff2" type="font/woff2" crossorigin>
@@ -22,16 +22,16 @@
     <link rel="preload" as="font" href="/crazy-bulk-2020-dev/fonts/oswald-semibold.adde8f.woff2" type="font/woff2" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="HandheldFriendly" content="true">
-    <meta name="description" content="My Reading List">
-    <meta property="og:description" content="My Reading List">
-    <meta property="og:title" content="CrazyBulk">
+    <meta name="description" content="Your cart">
+    <meta property="og:description" content="Your cart">
+    <meta property="og:title" content="Cart | CrazyBulk">
     <meta property="fb:admins" content="199601997065893">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/crazy-bulk-2020-dev/account/reading-list/">
+    <meta property="og:url" content="/crazy-bulk-2020-dev/cart/">
     <meta property="og:site_name" content="CrazyBulk">
-    <meta property="og:image" content="/crazy-bulk-2020-dev/img/og/og-all-products.png">
-    <meta itemprop="image" content="/crazy-bulk-2020-dev/img/og/og-all-products.png">
-    <link rel="image_src" href="/crazy-bulk-2020-dev/img/og/og-all-products.png">
+    <meta property="og:image" content="/crazy-bulk-2020-dev/img/og-all-products.png">
+    <meta itemprop="image" content="/crazy-bulk-2020-dev/img/og-all-products.png">
+    <link rel="image_src" href="/crazy-bulk-2020-dev/img/og-all-products.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/crazy-bulk-2020-dev/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/crazy-bulk-2020-dev/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/crazy-bulk-2020-dev/img/favicon/favicon-16x16.png">
@@ -39,7 +39,7 @@
     <link rel="mask-icon" href="/crazy-bulk-2020-dev/img/favicon/safari-pinned-tab.svg" color="#030113">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#fdd20e">
-<link href="../../css/app.css" rel="stylesheet"></head>
+<link href="../css/app.css" rel="stylesheet"></head>
 
 <body>
     <a href="#main" class="skip bg-anvarol caption text-uppercase text-breath pad-vert-tiny d-print-none">Skip to content <span class="shape sh-chev-down"></span></a>
@@ -340,183 +340,236 @@
 
     </div>
 
-    <main id="main">
-        <div class="bleed-grid bt-light-grey">
-            <div class="bleed-grid__img bleed-grid__img-left bt-white"></div>
-            <div class="container">
-                <div class="row no-gutters">
-                    <aside class="col-md-3 pad-vert-large pad-0-sm flyout-sm bt-white" aria-label="Hello, Boris">
-                        <input type="checkbox" name="account-nav" id="account-nav" class="flyout-sm__control sr-only" data-js="toggle">
-                        <label for="account-nav" class="flyout-sm__trigger media bt-white pad-vert-small flyout-sm__wide">
-                            <span class="h6 media-body flush">Hello, Boris</span>
-                            <span class="ml-3 d-md-none"><span class="shape sh-chev-down flyout-sm__icon"></span></span>
-                        </label>
-                        <div class="punch inside-gutter-sm">
-                            <div class="bt-white flyout-sm__details small text-uppercase flyout-sm__wide pad-top-small-sm">
-                                <p><strong><a href="/crazy-bulk-2020-dev/account/" class="btn btn-transparent ">My Account</a></strong></p>
-                                <p><a href="/crazy-bulk-2020-dev/account/recommendations/" class="btn btn-transparent">Recommendations</a></p>
-                                <p><a href="/crazy-bulk-2020-dev/account/orders/" class="btn btn-transparent">Orders</a></p>
-                                <p><a href="/crazy-bulk-2020-dev/account/addresses/" class="btn btn-transparent">Adresses</a></p>
-                                <p><a href="/crazy-bulk-2020-dev/account/cards/" class="btn btn-transparent">Cards</a></p>
-                                <p><strong class="btn btn-transparent">&#65517; My Reading List</strong></p>
-                                <p>
-                                    <a href="/crazy-bulk-2020-dev/" class="btn btn-transparent">
-                                        Log Out
-                                        <span class="ic-small">
-                                            <svg xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24" aria-label="Log out">
-                                                <path d="m 1,16 v 5 c 0,1 1,2 2,2 h 18 c 1,0 2,-1 2,-2 V 3 C 23,2 22,1 21,1 H 3 C 2,1 1,2 1,3 v 5" />
-                                                <path d="M 1,12 H 15" />
-                                                <path d="m 10,7 5,5 -5,5" />
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </p>
-                                <p class="d-md-none brd-top brd-light-grey">
-                                    <label for="account-nav" class="btn btn-transparent d-block text-center" title="Close menu">
-                                        <span class="shape sh-chev-up"></span>
-                                        <span class="sr-only">Close menu</span>
-                                    </label>
-                                </p>
+    <div class="container pad-vert-medium">
+        <div class="row">
+            <div class="col-lg-8">
+                <header class="media brd-bottom gutter-base pad-vert-small">
+                    <h1 class="h5 flush media-body">Cart</h1>
+                    <p class="ml-3 flush text-grey align-self-center">2 items</p>
+                </header>
+
+                <section class="media brd-bottom brd-light-grey gutter-base punch" aria-label="Anvarol">
+                    <p class="pos-ne d-md-none">
+                        <button type="button" class="btn btn-transparent size-h6" title="Remove this item from the cart">
+                            <span class="shape sh-close"></span>
+                            <span class="sr-only">Remove this item from the cart</span>
+                        </button>
+                    </p>
+                    <p class="mr-3 d-none d-md-block"><span class="prodsprite-medium sp-anvarol"></span></p>
+                    <div class="media-body">
+                        <div class="media">
+                            <p class="mr-3 d-block d-md-none"><span class="prodsprite-medium sp-anvarol"></span></p>
+                            <div class="media-body">
+                                <h2 class="heading-body size-h6 text-uppercase">Anvarol</h2>
+                                <p>Increase Your Energy, Reduces Your Hunger</p>
                             </div>
                         </div>
-                    </aside>
-
-                    <div class="col-md-1 bt-light-grey"></div>
-
-                    <section class="col-md-8 pad-vert-large bt-light-grey" aria-label="My Reading List">
-                        <h2 class="h3">My Reading List</h2>
-
                         <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-back1.jpg" alt="Here Is The Proof Of Natural Bodybuilding"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">Here Is The Proof Of Natural Bodybuilding</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
+                            <p class="media-body small"><strong>3 month supply</strong></p>
+                            <p class="ml-3 flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
                         </div>
+                        <div class="row align-items-end">
+                            <p class="col"><button type="button" class="btn btn-transparent">Edit quantity</button></p>
+                            <p class="col text-center d-none d-md-block"><button type="button" class="btn btn-transparent">Remove</button></p>
+                            <div class="col text-right">
+                                <p class="caption flush"><del>£98.85</del></p>
+                                <p>Subtotal: <strong class="text-testo-max">£65.95</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
+                <section class="media brd-bottom brd-light-grey gutter-base punch" aria-label="Clenbutrol">
+                    <p class="pos-ne d-md-none">
+                        <button type="button" class="btn btn-transparent size-h6" title="Remove this item from the cart">
+                            <span class="shape sh-close"></span>
+                            <span class="sr-only">Remove this item from the cart</span>
+                        </button>
+                    </p>
+                    <p class="mr-3 d-none d-md-block"><span class="prodsprite-medium sp-clenbutrol"></span></p>
+                    <div class="media-body">
                         <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-squat1.jpg" alt="How To Do A Barbell Squat"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">How To Do A Barbell Squat</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
+                            <p class="mr-3 d-block d-md-none"><span class="prodsprite-medium sp-clenbutrol"></span></p>
+                            <div class="media-body">
+                                <h2 class="heading-body size-h6 text-uppercase">Clenbutrol</h2>
+                                <p>Increase Your Energy, Reduces Your Hunger</p>
+                            </div>
                         </div>
-
                         <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-exercise2.jpg" alt="5 Best Cardio Exercises"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">5 Best Cardio Exercises</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
+                            <p class="media-body"><strong>1 month supply</strong></p>
+                            <p class="ml-3"><button type="button" class="btn btn-secondary btn-small">Upgrade to buy 2 get one free</button></p>
                         </div>
-
-                        <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-pose.jpg" alt="All About Phosphatidic Acid Benefits For Muscle Building"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">All About Phosphatidic Acid Benefits For Muscle Building</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
+                        <div class="row align-items-end">
+                            <p class="col"><button type="button" class="btn btn-transparent">Edit quantity</button></p>
+                            <p class="col text-center d-none d-md-block"><button type="button" class="btn btn-transparent">Remove</button></p>
+                            <div class="col text-right">
+                                <p>Subtotal: <strong>£32.95</strong></p>
+                            </div>
                         </div>
+                    </div>
+                </section>
 
-                        <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-weights2.jpg" alt="What Is ‘Roid Gut’ and What Is Causing It?"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">What Is ‘Roid Gut’ and What Is Causing It?</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
-                        </div>
-
-                        <div class="media">
-                            <a href="/crazy-bulk-2020-dev/programs-and-advice/article/" class="a-block media-body">
-                                <p class="d-md-none caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                <div class="media">
-                                    <p class="mr-3"><img src="/crazy-bulk-2020-dev/img/thumb/thumb-weights3.jpg" alt="5 Best Cardio Exercises"></p>
-                                    <div class="media-body">
-                                        <p class="d-none d-md-block caption text-grey text-uppercase">Steroids, weight gain, news</p>
-                                        <h3 class="size-h6 heading-body">5 Best Cardio Exercises</h3>
-                                        <p class="flush caption text-grey">Updated October 30, 2019 &bull; 7 minute read</p>
-                                        <p class="d-none d-md-block"><span class="btn btn-transparent">Read more <span class="shape sh-chev-right"></span></span></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="ml-3 align-self-center">
-                                <button type="button" class="btn btn-secondary">
-                                    <span class="shape sh-close"></span>
-                                    Remove
-                                </button>
-                            </p>
-                        </div>
-
-                    </section>
-                </div>
             </div>
+            <section class="col-lg-4" aria-label="Basket totals">
+                <div class="bt-light-grey pad-all-small">
+                    <header class="brd-bottom gutter-base">
+                        <h2 class="h5 gutter-small">Basket totals</h2>
+                    </header>
+
+                    <div class="media">
+                        <p class="media-body small flush">Subtotal</p>
+                        <p class="ml-3 small flush">£107.85</p>
+                    </div>
+                    <div class="media brd-bottom brd-grey">
+                        <p class="media-body small">Shipping</p>
+                        <p class="ml-3 small">Free</p>
+                    </div>
+
+                    <div class="accordion">
+                        <input type="checkbox" name="promo-code-toggle" id="promo-code-toggle" class="accordion__control sr-only">
+                        <label for="promo-code-toggle" class="accordion__trigger accordion__spacing media text-anvarol pad-vert-tiny">
+                            <span class="media-body caption text-uppercase">
+                                <span class="ic-small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" aria-label="Tag" role="img" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M 1 1 L 1 11 L 13 23 L 23 13 L 11 1 L 1 1 z M 5 4 A 1.5 1.5 0 0 1 7 5 A 1.5 1.5 0 0 1 5.5 7 A 1.5 1.5 0 0 1 4 5 A 1.5 1.5 0 0 1 5 4 z" />
+                                    </svg>
+                                </span>
+                                I have a gift card or code
+                            </span>
+                            <span class="ml-3 shape sh-chev-down accordion__icon ml-3 align-self-center text-anvarol"></span>
+                        </label>
+                        <form class="accordion__details">
+                            <div class="media">
+                                <p class="media-body flush">
+                                    <label for="promo-code" class="sr-only">Enter promo code</label>
+                                    <input type="text" name="promo-code" id="promo-code" class="inp-small" placeholder="Enter promo code">
+                                </p>
+                                <p class="flush"><input type="submit" value="Apply" class="btn btn-secondary btn-small"></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="brd-top brd-grey media pad-vert-small">
+                        <p class="media-body lead flush">Total</p>
+                        <p class="ml-3 lead flush">£107.85</p>
+                    </div>
+
+                    <p><a href="/crazy-bulk-2020-dev/checkout/" class="btn btn-primary">Proceed to checkout</a></p>
+                    <p class="text-center"><img src="/crazy-bulk-2020-dev/img/content/amazon-pay.png" alt="Pay with Amazon"></p>
+                    <p class="text-center"><img src="/crazy-bulk-2020-dev/img/content/img-payment-options.png" alt="Pay using Visa, Mastercard, American Express, Discover or Klarna."></p>
+                    <p class="text-center caption">Pay monthly, 0% <abbr title="“annual percentage rate">APR</abbr>, Pay With Klarna.</p>
+                </div>
+                <div class="pad-all-small">
+                    <div class="brd-all pad-all-small">
+                        <ul class="checklist caption flush">
+                            <li>
+                                <span class="text-uppercase">60 day money-back guarantee</span>
+                                <div class="tooltip" data-js="tooltip">
+                                    <input type="checkbox" name="guarantee-tooltip" id="guarantee-tooltip" class="sr-only" aria-controls="guarantee-tooltip-details">
+                                    <label for="guarantee-tooltip" class="round brd-all brd-anvarol text-anvarol ic-small">
+                                        <span class="glyph">i</span>
+                                    </label>
+                                    <section class="details bt-light-grey" id="guarantee-tooltip-details" aria-label="60 Day money back guarantee">
+                                        <h2 class="heading-body size-h6">60 Day money back guarantee</h2>
+                                        <p>If for any reason you are not fully satisfied with any of the CrazyBulk products, simply return the unused bottles in the original container within 67 days of when you received your order. We will refund you 100% of the product price – excluding shipping charges.</p>
+                                        <p>Please contact our customer service team on <a href="mailto:support@cb-support.com">support@cb-support.com</a> and we will get back to you with the return instructions within 48 Business Hours.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="text-uppercase">Fast delivery 24-48 hours</li>
+                            <li class="text-uppercase">Free worldwide shipping</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-    </main>
+    </div>
+
+    <aside class="bt-light-grey pad-vert-large" aria-label="We also recommend">
+        <div class="container">
+            <h2 class="h5">We also recommend</h2>
+
+            <div class="row">
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-pre-train"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">Intensive Pre-Train</h3>
+                            <p class="flush"><strong>£35.95</strong></p>
+                            <p class="small">Fuel your workout - going harder and stronger for longer with heightened focus</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-tri-protein"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">Tri Protein</h3>
+                            <p class="flush"><strong>£33.95</strong></p>
+                            <p class="small">Packed with 6 sources of protein for a tri-phase release</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-crn-5"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">Ultimate CRN-5</h3>
+                            <p class="flush"><strong>£26.95</strong></p>
+                            <p class="small">Increase physical performance in successive bursts of short term high intensity exercise (HIIT)</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+            </div>
+
+            <div class="row">
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-d-bal"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">D-Bal</h3>
+                            <p class="flush"><strong>£35.95</strong></p>
+                            <p class="small">Our Ultimate Muscle Mass Builder</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-testo-max"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">Testo-Max</h3>
+                            <p class="flush"><strong>£35.99</strong></p>
+                            <p class="small">Maximises Your Testosterone Production</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+                <a href="/crazy-bulk-2020-dev/product/anvarol/" class="col-lg a-block flex-vert gutter-base">
+                    <div class="media">
+                        <p class="mr-3"><span class="prodsprite-medium sp-anadrole"></span></p>
+                        <div class="media-body">
+                            <h3 class="h6 flush">Anadrole</h3>
+                            <p class="flush"><strong>£32.99</strong></p>
+                            <p class="small">Allows You To Workout Longer, Recover Quicker</p>
+                        </div>
+                    </div>
+                    <p class="mt-auto flush"><span class="btn btn-secondary btn-small">Add to cart</span></p>
+                </a>
+
+            </div>
+
+        </div>
+    </aside>
 
     <div class="dialog-overlay bt-modal-shadow" data-js="dialog-overlay" aria-hidden="true"></div>
     <aside class="dialog bt-light-grey pad-all-medium" role="dialog" aria-labelledby="dialog-title" data-js="dialog" aria-hidden="true">
@@ -526,161 +579,6 @@
         </div>
         <div id="dialog-content"></div>
     </aside>
-
-    <!-- Slide out cart -->
-    <input type="checkbox" name="cart-toggle1" id="cart-toggle1" class="sr-only cart-toggle pos-fixed">
-    <div class="cart-pane">
-        <label for="cart-toggle1" class="pos-stretch bt-modal-shadow" title="Close cart"><span class="sr-only">Close cart</span></label>
-        <div class="cart-pane__content punch bt-white">
-            <div class="cart-pane__items brd-top brd-light-grey pad-vert-small">
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anvarol">
-                    <header class="media">
-                        <p class="mr-3 flush"><span class="prodsprite-small sp-anvarol"><span class="sr-only">Anvarol</span></span></p>
-                        <div class="media-body">
-                            <h2 class="h6 flush">Anvarol</h2>
-                            <p class="flush">Increases Your Energy<br>Reduces Your Hunger</p>
-                        </div>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
-                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="flush caption">£98.85</p>
-                            <p class="lead text-testo-max">£65.95</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Female Cutting Stack">
-                    <header>
-                        <p class="d-table">
-                            <span class="d-table-cell prodsprite-small sp-anvarol"></span>
-                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
-                            <span class="d-table-cell prodsprite-small sp-winsol"></span>
-                        </p>
-                        <h2 class="h6 flush">Female Cutting Stack</h2>
-                        <p class="flush">The ultimate combination for ladies who lift.</p>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="flush caption"><del>£136.27</del></p>
-                            <p class="lead text-testo-max">£93.65</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Anadrole">
-                    <header class="media">
-                        <p class="mr-3 flush"><span class="prodsprite-small sp-anadrole"><span class="sr-only">Anadrole</span></span></p>
-                        <div class="media-body">
-                            <h2 class="h6 flush">Anadrole</h2>
-                            <p class="flush">Allows You To Workout Longer, Recover Quicker</p>
-                        </div>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="lead text-testo-max">£32.99</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Ultimate Stack">
-                    <header>
-                        <p class="d-table">
-                            <span class="d-table-cell prodsprite-small sp-d-bal"></span>
-                            <span class="d-table-cell prodsprite-small sp-trenorol"></span>
-                            <span class="d-table-cell prodsprite-small sp-clenbutrol"></span>
-                            <span class="d-table-cell prodsprite-small sp-testo-max"></span>
-                            <span class="d-table-cell prodsprite-small sp-decaduro"></span>
-                            <span class="d-table-cell prodsprite-small sp-anadrole"></span>
-                        </p>
-                        <h2 class="h6 flush">Ultimate Stack</h2>
-                        <p class="flush">Improve muscle growth, strength, recovery and fat loss</p>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="flush caption"><del>£215.78</del></p>
-                            <p class="lead text-testo-max">£165.95</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Trenorol">
-                    <header class="media">
-                        <p class="mr-3 flush"><span class="prodsprite-small sp-trenorol"><span class="sr-only">Trenorol</span></span></p>
-                        <div class="media-body">
-                            <h2 class="h6 flush">Trenorol</h2>
-                            <p class="flush">Converts More Protein to Muscle Mass</p>
-                        </div>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>3 month supply</strong></p>
-                        <p class="media-body flag text-testo-max bt-testo-max suck"><strong>Buy 2 get 1 free applied <span class="shape sh-yes"></span></strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="flush caption"><del>£73.89</del></p>
-                            <p class="lead text-testo-max">£49.27</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="brd-bottom brd-light-grey gutter-base container-fluid" aria-label="Winsol">
-                    <header class="media">
-                        <p class="mr-3 flush"><span class="prodsprite-small sp-winsol"><span class="sr-only">Winsol</span></span></p>
-                        <div class="media-body">
-                            <h2 class="h6 flush">Winsol</h2>
-                            <p class="flush">Increases Your Focus, Energy And Strength</p>
-                        </div>
-                    </header>
-                    <div class="d-md-flex gutter-base">
-                        <p class="caption mr-3 align-self-center flush"><strong>1 month supply</strong></p>
-                    </div>
-                    <div class="row align-items-end">
-                        <p class="col"><a href="#" class="caption text-uppercase">Edit quantity</a></p>
-                        <p class="col"><a href="#" class="caption text-uppercase">Remove</a></p>
-                        <div class="col-auto text-right">
-                            <p class="lead text-testo-max">£36.95</p>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-            <footer class="cart-pane__total brd-top mt-auto">
-                <div class="media small">
-                    <p class="media-body flush">Shipping:</p>
-                    <p class="ml-3 flush">Free</p>
-                </div>
-                <div class="media">
-                    <p class="media-body lead">Total:</p>
-                    <p class="ml-3 lead">£444.76</p>
-                </div>
-                <p class="flush"><a href="/crazy-bulk-2020-dev/cart/" class="btn btn-primary flush">Proceed to checkout</a></p>
-            </footer>
-        </div>
-    </div>
 
     <footer class="bg-black pad-vert-large">
         <div class="container">
@@ -768,6 +666,6 @@
         </div>
     </footer>
 
-<script type="text/javascript" src="../../js/app.js"></script></body>
+<script type="text/javascript" src="../js/app.js"></script></body>
 
 </html>
