@@ -66,11 +66,6 @@
             <header class="row gutter-large">
                 <div class="col-lg-8 col-md-10">
                     <h2>Stack thumbnail images</h2>
-                    <p>Individual product thumbnails are square. Stacks, however, take up more screen space in most breakpoints. In order to create a pleasing layout, stack thumbnails need to match the height of single product thumbnails.</p>
-                    <p>Within these layouts, there are differences depending upon how many product need to be displayed.</p>
-                    <p>Note that the container for the stack can be as wide as it needs to be, and will still match the height of a single product, as long as that product is no wider than <code>col-3</code>.</p>
-                    <h3>Limitations</h3>
-                    <p>Because heights are hard-coded within this layout, it will not work as expected within nested grid layouts (for example in the mega-menu). The values are calculated for columns as children of the <code>container</code> element.</p>
                 </div>
             </header>
 
@@ -81,10 +76,10 @@
                     <section class="col-lg-6 text-center flex-vert" itemscope itemtype="https://schema.org/Product" aria-label="Example Stack">
                         <meta itemprop="brand" content="CrazyBulk">
                         <a href="#" itemprop="url" class="a-block" title="Learn more about Example Stack">
-                            <figure class="ratio stack-img row no-gutters text-right">
-                                <p class="col bg-anvarol pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-anvarol.png" alt="Anvarol" itemprop="image"></p>
-                                <p class="col bg-clenbutrol pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-clenbutrol.png" alt="Clenbutrol" itemprop="image"></p>
-                                <p class="col bg-winsol pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-winsol.png" alt="Winsol" itemprop="image"></p>
+                            <figure class="row no-gutters punch">
+                                <span class="col prodsprite-large sp-anvarol bg-anvarol"></span>
+                                <span class="col prodsprite-large sp-clenbutrol bg-clenbutrol"></span>
+                                <span class="col prodsprite-large sp-winsol bg-winsol"></span>
                                 <figcaption class="sr-only">Example Stack</figcaption>
                             </figure>
                             <h2 class="h5" itemprop="name">Example Stack</h2>
@@ -94,8 +89,8 @@
                     <section class="col-md-6 col-lg-3 text-center flex-vert" itemscope itemtype="https://schema.org/Product" aria-label="HGH-X2">
                         <meta itemprop="brand" content="CrazyBulk">
                         <a href="#" itemprop="url" class="a-block" title="Learn more about HGH-X2">
-                            <figure class="ratio bg-hgh-x2">
-                                <p class="pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-hgh-x2.png" alt="HGH-X2" itemprop="image" class="img-fluid"></p>
+                            <figure class="punch bg-hgh-x2">
+                                <span class="prodsprite-large sp-hgh-x2"></span>
                                 <figcaption class="sr-only">HGH-X2</figcaption>
                             </figure>
                             <h2 class="h5" itemprop="name">HGH-X2</h2>
@@ -105,8 +100,8 @@
                     <section class="col-md-6 col-lg-3 text-center flex-vert" itemscope itemtype="https://schema.org/Product" aria-label="Clenbutrol">
                         <meta itemprop="brand" content="CrazyBulk">
                         <a href="#" itemprop="url" class="a-block" title="Learn more about Clenbutrol">
-                            <figure class="ratio bg-clenbutrol">
-                                <p class="pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-clenbutrol.png" alt="Clenbutrol" itemprop="image" class="img-fluid"></p>
+                            <figure class="punch bg-clenbutrol">
+                                <span class="prodsprite-large sp-clenbutrol"></span>
                                 <figcaption class="sr-only">Clenbutrol</figcaption>
                             </figure>
                             <h2 class="h5" itemprop="name">Clenbutrol</h2>
@@ -123,14 +118,14 @@
                     <section class="col-lg text-center flex-vert" itemscope itemtype="https://schema.org/Product" aria-label="Example Stack">
                         <meta itemprop="brand" content="CrazyBulk">
                         <a href="#" itemprop="url" class="a-block" title="Learn more about Example Stack">
-                            <figure class="ratio stack-img row no-gutters text-right">
-                                <p class="col bg-anvarol pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-anvarol-stack.png" alt="Anvarol" itemprop="image"></p>
-                                <p class="col bg-clenbutrol pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-clenbutrol-stack.png" alt="Clenbutrol" itemprop="image"></p>
-                                <p class="col bg-winsol pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-winsol-stack.png" alt="Winsol" itemprop="image"></p>
-                                <p class="col bg-trenorol pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-trenorol-stack.png" alt="Trenorol" itemprop="image"></p>
-                                <p class="col bg-d-bal pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-d-bal-stack.png" alt="D-Bal" itemprop="image"></p>
-                                <p class="col bg-decaduro pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-decaduro-stack.png" alt="Decaduro" itemprop="image"></p>
-                                <p class="col bg-testo-max pad-all-medium pad-right-0 flush"><img src="/crazy-bulk-2020-dev/img/products/medium-testo-max-stack.png" alt="Testo-max" itemprop="image"></p>
+                            <figure class="row no-gutters punch">
+                                <span class="col prodsprite-large stack sp-anvarol bg-anvarol"></span>
+                                <span class="col prodsprite-large stack sp-clenbutrol bg-clenbutrol"></span>
+                                <span class="col prodsprite-large stack sp-winsol bg-winsol"></span>
+                                <span class="col prodsprite-large stack sp-trenorol bg-trenorol"></span>
+                                <span class="col prodsprite-large stack sp-d-bal bg-d-bal"></span>
+                                <span class="col prodsprite-large stack sp-decaduro bg-decaduro"></span>
+                                <span class="col prodsprite-large stack sp-testo-max bg-testo-max"></span>
                                 <figcaption class="sr-only">Example Stack</figcaption>
                             </figure>
                             <h2 class="h5" itemprop="name">Example Stack</h2>
@@ -140,8 +135,8 @@
                     <section class="col-lg-3 text-center flex-vert" itemscope itemtype="https://schema.org/Product" aria-label="HGH-X2">
                         <meta itemprop="brand" content="CrazyBulk">
                         <a href="#" itemprop="url" class="a-block" title="Learn more about HGH-X2">
-                            <figure class="ratio bg-hgh-x2">
-                                <p class="pad-all-medium flush"><img src="/crazy-bulk-2020-dev/img/products/medium-hgh-x2.png" alt="HGH-X2" itemprop="image" class="img-fluid"></p>
+                            <figure class="punch bg-hgh-x2">
+                                <span class="prodsprite-large sp-hgh-x2"></span>
                                 <figcaption class="sr-only">HGH-X2</figcaption>
                             </figure>
                             <h2 class="h5" itemprop="name">HGH-X2</h2>
