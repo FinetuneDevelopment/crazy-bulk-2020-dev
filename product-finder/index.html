@@ -44,8 +44,9 @@
 <body>
   <a href="#main" class="skip bg-anvarol caption text-uppercase text-breath pad-vert-tiny d-print-none">Skip to content <span class="shape sh-chev-down"></span></a>
   <p class="bt-yellow text-center caption text-uppercase text-breath pad-vert-tiny flush d-print-none">Free worldwide shipping</p>
+  <p class="d-none d-print-block text-center"><img src="/crazy-bulk-2020-dev/img/logo-crazybulk-black.png" alt="CrazyBulk"></p>
   <div class="bg-midnight-blue">
-    <div class="container pad-vert-small-sm masthead">
+    <div class="container pad-vert-small-sm d-print-none masthead">
       <div class="row">
         <form action="#" method="get" class="col-5 d-none d-md-block">
           <input type="checkbox" name="toggle-search" id="toggle-search" class="toggle-check sr-only">
@@ -96,11 +97,11 @@
 
     <input type="checkbox" id="main-nav-toggle" name="main-nav-toggle" class="sr-only" data-js="toggle">
 
-    <nav class="nav-main d-none d-md-block" aria-label="Main" data-js="nav-main">
+    <nav class="nav-main d-none d-md-block d-print-none" aria-label="Main" data-js="nav-main">
       <div class="container brd-bottom brd-light-grey mobile-nav-tools d-md-none">
         <div class="row">
           <p class="col flush">
-            <label for="main-nav-toggle" aria-label="Toggle main navigation" class="btn text-anvarol">
+            <label for="main-nav-toggle" aria-label="Toggle main navigation" class="btn text-anvarol d-block">
               <span class="shape sh-close"></span>
               <span class="small text-uppercase">Close</span>
             </label>
@@ -122,10 +123,10 @@
         </div>
       </div>
       <ul class="level-1">
-        <li><a href="#">Offers</a></li>
+        <li><a href="/crazy-bulk-2020-dev/buy-2-get-1-free/">Offers</a></li>
         <li>
-          <input type="checkbox" name="subnav-shop" id="subnav-shop" class="sr-only toggle-level-2" data-js="toggle">
-          <span class="media">
+                    <input type="checkbox" name="subnav-shop" id="subnav-shop" class="sr-only toggle-level-2" data-js="toggle">
+                    <span class="d-flex d-md-block">
             <a href="#" class="parent media-body" aria-haspopup="true" aria-expanded="false">Shop</a>
             <label for="subnav-shop" class="subnav-trigger ml-3 brd-left brd-light-grey d-md-none text-anvarol align-self-center" aria-label="Toggle sub-navigation">
               <span class="shape sh-chev-down"></span>
@@ -135,7 +136,7 @@
             <div class="container">
               <div class="row">
                 <section class="col-md-5" aria-label="Stacks">
-                  <h2 class="no-border"><a href="#">Stacks</a></h2>
+                  <h2 class="no-border"><a href="/crazy-bulk-2020-dev/stacks-combo-packages/">Stacks</a></h2>
                   <div class="row small block-scroll block-scroll-xs" data-js="block-scroll" data-offgrid-sm="right">
                     <p class="col col-md-6 block-scroll__child_xs" data-js="block-scroll-item">
                       <a href="#" class="btn">
@@ -277,7 +278,7 @@
                   </p>
                 </section>
                 <section class="col-md-4" aria-label="Marketplace">
-                  <h2><a href="#">Marketplace</a></h2>
+                  <h2><a href="/crazy-bulk-2020-dev/marketplace/">Marketplace</a></h2>
                   <p>
                     <a href="#" class="media">
                       <span class="media-body">
@@ -333,7 +334,7 @@
         </li>
         <li><a href="/crazy-bulk-2020-dev/product-finder/">Product Finder</a></li>
         <li><a href="/crazy-bulk-2020-dev/programs-and-advice/">Programs &amp; Pro Advice</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/crazy-bulk-2020-dev/about-us/">About</a></li>
       </ul>
     </nav>
 
@@ -341,18 +342,15 @@
 
   <form class="bg-midnight-blue pad-vert-small" action="/crazy-bulk-2020-dev/product/personal-stack/" method="get">
     <div class="container">
-      <div class="block-scroll" data-js="block-scroll" data-nav="progress">
+      <div class="block-scroll pad-vert-small" data-js="block-scroll" data-nav="progress">
 
         <section class="block-scroll__child-wide" data-js="block-scroll-item" aria-label="Your bodybuilding cycle goals">
           <h1 class="h4 text-center">Your bodybuilding cycle goals</h1>
           <p class="text-center">
-            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="bodybuilding-model" data-heading="Bodybuilding cycle goals explained">
-              <span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span>
-              <span class="text-uppercase">Not sure<span class="sr-only"> which bodybuilding cycle you are</span>?</span>
-            </button>
+            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="bodybuilding-model" data-heading="Bodybuilding cycle goals explained"><span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span><span class="text-uppercase"> Not sure<span class="sr-only"> which bodybuilding cycle you are</span>?</span></button>
           </p>
 
-          <div id="bodybuilding-model" hidden>
+          <div id="bodybuilding-model" class="flex-vert" hidden>
             <section class="gutter-base brd-bottom" aria-label="Bulking">
               <h2 class="h5">
                 <span class="bt-yellow round d-inline-block ic-medium mr-2">
@@ -389,7 +387,7 @@
                     <path d="m 1,8 v 3" />
                     <path d="m 23,8 v 3" />
                     <path d="m 9,20 1,-8 C 9,12 8,11 8,10 H 6 V 8 h 2" />
-                    <path d="m 16,20 -2,-8 c 1,0 1.986128,-1 2,-2 V 7 C 16,4 11,3 9,6" />
+                    <path d="m 16,20 -2,-8 c 1,0 2,-1 2,-2 V 7 C 16,4 11,3 9,6" />
                     <rect y="8" x="16" height="2" width="2" />
                   </svg>
                 </span>
@@ -411,6 +409,8 @@
               </h2>
               <p class="small">Someone who is bulking is purposely eating more calories than they need. By providing your muscles with a strong stimulus to grow from progressive, intense training.</p>
             </section>
+
+            <p class="mt-auto flush"><button type="button" class="btn btn-secondary" data-js="dialog-close" aria-label="Close dialog" title="Close dialog">Close dialog</button></p>
 
           </div>
 
@@ -467,7 +467,7 @@
                         <path d="m 1,8 v 3" />
                         <path d="m 23,8 v 3" />
                         <path d="m 9,20 1,-8 C 9,12 8,11 8,10 H 6 V 8 h 2" />
-                        <path d="m 16,20 -2,-8 c 1,0 1.986128,-1 2,-2 V 7 C 16,4 11,3 9,6" />
+                        <path d="m 16,20 -2,-8 c 1,0 2,-1 2,-2 V 7 C 16,4 11,3 9,6" />
                         <rect y="8" x="16" height="2" width="2" />
                       </svg>
                     </span>
@@ -478,26 +478,21 @@
           </div>
 
           <p class="text-center">
-            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">
-              Skip question <span class="shape sh-chev-right"></span>
-            </button>
+            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">Skip question <span class="shape sh-chev-right"></span></button>
           </p>
 
         </section>
 
         <section class="block-scroll__child-wide" data-js="block-scroll-item" aria-label="Your gender">
           <h1 class="h4 text-center">Your gender</h1>
+
           <p class="text-center">
-            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="gender-dialog" data-heading="Why we need to know your gender">
-              <span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span>
-              <span class="text-uppercase">Why do we need this information<span class="sr-only"> about your gender</span>?</span>
-            </button>
+            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="gender-dialog" data-heading="Why we need to know your gender"><span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span><span class="text-uppercase"> Why do we need this information<span class="sr-only"> about your gender</span>?</span></button>
           </p>
 
-          <div id="gender-dialog" hidden>
-            <div class="gutter-base">
-              <p>Some of our products are designed to increase testosterone levels naturally.</p>
-            </div>
+          <div id="gender-dialog" class="pad-top-medium flex-vert" hidden>
+            <p>Some of our products are designed to increase testosterone levels naturally.</p>
+            <p class="mt-auto flush"><button type="button" class="btn btn-secondary" data-js="dialog-close" aria-label="Close dialog" title="Close dialog">Close dialog</button></p>
           </div>
 
           <div class="row justify-content-center">
@@ -579,9 +574,7 @@
           </div>
 
           <p class="text-center">
-            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">
-              Skip question <span class="shape sh-chev-right"></span>
-            </button>
+            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">Skip question <span class="shape sh-chev-right"></span></button>
           </p>
 
         </section>
@@ -624,7 +617,7 @@
           <div class="row justify-content-center">
             <p class="col-lg-6 col-md-8 col-sm-10">
               <input type="radio" name="body-type" id="mesomorph" value="mesomorph" class="sr-only product-finder__toggle" data-js="progress-forward">
-              <label for="mesomorph" class="d-block brd-all brd-light-grey bt-white rad-tiny">
+              <label for="mesomorph" class="d-block brd-all brd-light-grey bt-white rad-tiny product-finder__trigger">
                 <span class="row no-gutters">
                   <span class="h5 col-8 flush product-finder__gutter">Mesomorph</span>
                   <span class="col-4 text-center product-finder__icon-parent">
@@ -638,9 +631,7 @@
           </div>
 
           <p class="text-center">
-            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">
-              Skip question <span class="shape sh-chev-right"></span>
-            </button>
+            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">Skip question <span class="shape sh-chev-right"></span></button>
           </p>
 
         </section>
@@ -649,13 +640,10 @@
           <h1 class="h4 text-center">Type of exercise</h1>
 
           <p class="text-center">
-            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="exercise-model" data-heading="Types of exercise explained">
-              <span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span>
-              <span class="text-uppercase">Not sure<span class="sr-only"> which type of exercise is right for you</span>?</span>
-            </button>
+            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="exercise-model" data-heading="Types of exercise explained"><span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span><span class="text-uppercase"> Not sure<span class="sr-only"> which type of exercise is right for you</span>?</span></button>
           </p>
 
-          <div id="exercise-model" hidden>
+          <div id="exercise-model" class="flex-vert" hidden>
             <section class="gutter-base brd-bottom" aria-label="Lifting">
               <h2 class="h5">
                 <span class="bt-yellow round d-inline-block ic-medium mr-2">
@@ -665,7 +653,7 @@
                     <path d="m 1,8 v 3" />
                     <path d="m 23,8 v 3" />
                     <path d="m 9,20 1,-8 C 9,12 8,11 8,10 H 6 V 8 h 2" />
-                    <path d="m 16,20 -2,-8 c 1,0 1.986128,-1 2,-2 V 7 C 16,4 11,3 9,6" />
+                    <path d="m 16,20 -2,-8 c 1,0 2,-1 2,-2 V 7 C 16,4 11,3 9,6" />
                     <rect y="8" x="16" height="2" width="2" />
                   </svg>
                 </span>
@@ -706,6 +694,8 @@
               <p class="small">High-intensity interval training (HIIT), also called high-intensity intermittent exercise (HIIE) or sprint interval training (SIT), is a form of interval training, a cardiovascular exercise strategy alternating short periods of intense anaerobic exercise with less intense recovery periods, until too exhausted to continue. Though there is no universal HIIT session duration, these intense workouts typically last under 30 minutes, with times varying based on a participant's current fitness level. The intensity of HIIT also depends on the duration of the session.</p>
             </section>
 
+            <p class="mt-auto flush"><button type="button" class="btn btn-secondary" data-js="dialog-close" aria-label="Close dialog" title="Close dialog">Close dialog</button></p>
+
           </div>
 
           <div class="row justify-content-center">
@@ -713,8 +703,8 @@
               <input type="radio" name="exercise-type" id="lifting" value="lifting" class="sr-only product-finder__toggle" data-js="progress-forward">
               <label for="lifting" class="d-block brd-all brd-light-grey bt-white rad-tiny product-finder__trigger">
                 <span class="row no-gutters">
-                  <span class="h5 col-8 flush product-finder__gutter">Lifting</span>
-                  <span class="col-4 text-right product-finder__icon-parent">
+                  <span class="h5 col col-sm-8 flush product-finder__gutter">Lifting</span>
+                  <span class="col col-sm-4 text-right product-finder__icon-parent">
                     <img src="/crazy-bulk-2020-dev/img/content/product-finder-lifting.jpg" alt="Lifting" class="product-finder__img">
                   </span>
                 </span>
@@ -727,8 +717,8 @@
               <input type="radio" name="exercise-type" id="cardio" value="cardio" class="sr-only product-finder__toggle" data-js="progress-forward">
               <label for="cardio" class="d-block brd-all brd-light-grey bt-white rad-tiny product-finder__trigger">
                 <span class="row no-gutters">
-                  <span class="h5 col-8 flush product-finder__gutter">Cardio</span>
-                  <span class="col-4 text-right product-finder__icon-parent">
+                  <span class="h5 col col-sm-8 flush product-finder__gutter">Cardio</span>
+                  <span class="col col-sm-4 text-right product-finder__icon-parent">
                     <img src="/crazy-bulk-2020-dev/img/content/product-finder-cardio.jpg" alt="Cardio" class="product-finder__img">
                   </span>
                 </span>
@@ -741,8 +731,8 @@
               <input type="radio" name="exercise-type" id="high-intensity" value="high-intensity" class="sr-only product-finder__toggle" data-js="progress-forward">
               <label for="high-intensity" class="d-block brd-all brd-light-grey bt-white rad-tiny product-finder__trigger">
                 <span class="row no-gutters">
-                  <span class="h5 col-8 flush product-finder__gutter">High intensity</span>
-                  <span class="col-4 text-right product-finder__icon-parent">
+                  <span class="h5 col col-sm-8 flush product-finder__gutter">High intensity</span>
+                  <span class="col col-sm-4 text-right product-finder__icon-parent">
                     <img src="/crazy-bulk-2020-dev/img/content/product-finder-high-intensity.jpg" alt="High intensity" class="product-finder__img">
                   </span>
                 </span>
@@ -751,9 +741,7 @@
           </div>
 
           <p class="text-center">
-            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">
-              Skip question <span class="shape sh-chev-right"></span>
-            </button>
+            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">Skip question <span class="shape sh-chev-right"></span></button>
           </p>
 
         </section>
@@ -804,9 +792,7 @@
           </div>
 
           <p class="text-center">
-            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">
-              Skip question <span class="shape sh-chev-right"></span>
-            </button>
+            <button type="button" class="caption text-uppercase btn text-yellow" data-js="progress-forward">Skip question <span class="shape sh-chev-right"></span></button>
           </p>
 
         </section>
@@ -815,16 +801,12 @@
           <h1 class="h4 text-center">Finally, what can we call you?</h1>
 
           <p class="text-center">
-            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="gdpr-dialog" data-heading="Why we need your personal information">
-              <span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span>
-              <span class="text-uppercase">Your persona data</span>
-            </button>
+            <button type="button" class="btn text-yellow caption" data-js="dialog-open" data-contentid="gdpr-dialog" data-heading="Why we need your personal information"><span class="round brd-all brd-yellow ic-small"><span class="glyph">i</span></span><span class="text-uppercase"> Your persona data</span></button>
           </p>
 
-          <div id="gdpr-dialog" hidden>
-            <div class="gutter-base">
+          <div id="gdpr-dialog" class="flex-vert pad-top-medium" hidden>
               <p>We will use this information to create an account for you. You can close this account and delete your personal data at any time.</p>
-            </div>
+              <p class="mt-auto flush"><button type="button" class="btn btn-secondary" data-js="dialog-close" aria-label="Close dialog" title="Close dialog">Close dialog</button></p>
           </div>
 
           <div class="row justify-content-center">
@@ -873,7 +855,7 @@
     <div class="punch">
       <p class="pos-ne"><button type="button" data-js="dialog-close" class="btn text-anvarol" aria-label="Close dialog" title="Close dialog"><span class="shape sh-close"><span class="sr-only">Close dialog</span></span></button></p>
     </div>
-    <div id="dialog-content"></div>
+    <div id="dialog-content" class="flex-vert"></div>
   </aside>
 
     <!-- Slide out cart -->
@@ -1031,7 +1013,7 @@
         </div>
     </div>
 
-    <footer class="bg-black pad-vert-large">
+    <footer class="bg-black pad-vert-large d-print-none">
         <div class="container">
             <div class="row">
                 <section class="col-lg-6" aria-label="Get in touch">

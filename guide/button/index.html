@@ -47,19 +47,20 @@
 
     <div class="container">
 
-      <p>
-        <a href="/crazy-bulk-2020-dev/guide/">Home</a>
-        <a href="/crazy-bulk-2020-dev/guide/typeface/">Typefaces</a>
-        <a href="/crazy-bulk-2020-dev/guide/typography/">Typography</a>
-        <a href="/crazy-bulk-2020-dev/guide/table/">Table</a>
-        <a href="/crazy-bulk-2020-dev/guide/heading/">Headings</a>
-        <a href="/crazy-bulk-2020-dev/guide/colour/">Colour</a>
-        <a href="/crazy-bulk-2020-dev/guide/button/">Buttons</a>
-        <a href="/crazy-bulk-2020-dev/guide/form/">Forms</a>
-        <a href="/crazy-bulk-2020-dev/guide/panel/">Panels and call-to-action</a>
-        <a href="/crazy-bulk-2020-dev/guide/icon/">Icons</a>
-        <a href="/crazy-bulk-2020-dev/guide/interactive/">Interactive</a>
+      <p class="btn-group pad-vert-large">
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/">Home</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/typeface/">Typefaces</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/typography/">Typography</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/table/">Table</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/heading/">Headings</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/colour/">Colour</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/button/">Buttons</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/form/">Forms</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/panel/">Panels</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/icon/">Icons</a>
+        <a class="btn btn-secondary btn-inline btn-small btn-inline" href="/crazy-bulk-2020-dev/guide/interactive/">Interactive</a>
       </p>
+
 
       <h1>Buttons</h1>
 
@@ -408,9 +409,9 @@
 
       <div class="row gutter-xlarge">
 
-        <section aria-label="Transparent buttons" class="col">
+        <section aria-label="Transparent buttons" class="col-md">
           <h2>Transparent buttons</h2>
-          <p>Transparent buttons are design to sit adjacent to more important functionality.</p>
+          <p>Transparent buttons are design to sit adjacent to more important functionality. Note that these elements take on a blue colour by default, but will revert to a higher contrast colour as soon as they are used inside a background colour class.</p>
           <p>
             <a href="#" class="btn btn-transparent">Link</a>
             <span class="btn btn-transparent">Span</span>
@@ -419,29 +420,20 @@
           </p>
         </section>
 
-        <section aria-label="Transparent buttons" class="offset-md-2 col">
+        <section aria-label="Generic button class" class="offset-md-2 col-md">
           <h2>Generic button class</h2>
-          <p>The generic <code>btn</code> class can be useful when creating subtle controls, paired with an icon:</p>
+          <p>The generic <code>btn</code> class can be useful when creating subtle controls, paired with an icon. Note that Safari really struggles with the concept of <code>inline-block</code>, so Media layouts are required, in order to get the icons to align correctly.</p>
+          <p>Note that Safari has an issue with combining inline text and <code>inline-block</code> elements. However, as long as you remove all new line whitespace inside the <code>btn</code>, it seems to render fine. Spaces are OK.</p>
           <p>
-            <a href="#" class="btn">
-              Link
-              <span class="round brd-all text-anvarol brd-anvarol ic-small">
-                <span class="shape sh-close"></span>
-              </span>
-            </a>
-            <span class="btn">
-              Span
-              <span class="round brd-all text-anvarol brd-anvarol ic-small">
-                <span class="shape sh-yes"></span>
-              </span>
-            </span>
-            <button type="button" class="btn">
-              Button
-              <span class="round brd-all text-anvarol brd-anvarol ic-small">
-                <span class="shape sh-chev-right"></span>
-              </span>
-            </button>
+
+            <a href="#" class="btn">Link <span class="round brd-all text-anvarol brd-anvarol ic-small"><span class="shape sh-close"></span></span></span></a>
+
+            <span class="btn">Span <span class="round brd-all text-anvarol brd-anvarol ic-small"><span class="shape sh-yes"></span></span></span>
+
+            <button type="button" class="btn">Button <span class="round brd-all text-anvarol brd-anvarol ic-small"><span class="shape sh-chev-right"></span></span></button>
+
             <input type="button" class="btn" value="Input">
+
           </p>
         </section>
 
